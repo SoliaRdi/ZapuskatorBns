@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="E_InvalidPublicKey" xml:space="preserve">
+    <value>Неверный ключ.</value>
+  </data>
+  <data name="E_DelayedFailed" xml:space="preserve">
+    <value>Ошибка отложенной валидации.</value>
+  </data>
+  <data name="E_InvalidSignature" xml:space="preserve">
+    <value>Ошибка валидации лицензии</value>
+  </data>
+  <data name="E_NoLicense" xml:space="preserve">
+    <value>Нет лицензии.</value>
+  </data>
+  <data name="E_NoLicensesFound" xml:space="preserve">
+    <value>Нет лицензии.</value>
+  </data>
+  <data name="E_NoLicensesFoundSummary" xml:space="preserve">
+    <value>Нет лицензии.</value>
+  </data>
+  <data name="E_NoCompiledLicenses" xml:space="preserve">
+    <value>Нет лицензии.</value>
+  </data>
+  <data name="E_RetriedTooManyTimes" xml:space="preserve">
+    <value>Слишком много попыток</value>
+  </data>
+  <data name="E_UnexpectedValidate" xml:space="preserve">
+    <value>Неожиданная ошибка.</value>
+  </data>
+  <data name="E_WebImpersonationNotAllowed" xml:space="preserve">
+    <value>Запустите приложение от имени администратора.</value>
+  </data>
+  <data name="E_RSADenied" xml:space="preserve">
+    <value>Нет доступа к RSA алгоритму.</value>
+  </data>
+  <data name="E_CouldNotAcquireSecureStorage" xml:space="preserve">
+    <value>Нет доступа.</value>
+  </data>
+  <data name="E_ErrorLoadingLicenseFile" xml:space="preserve">
+    <value>Нет лицензии.</value>
+  </data>
+  <data name="E_CouldNotValidateCached" xml:space="preserve">
+    <value>Нет лицензии.</value>
+  </data>
+  <data name="E_CouldNotValidate" xml:space="preserve">
+    <value>Ошибка валидации лицензии.</value>
+  </data>
+  <data name="E_AdminRequiredFirstRun" xml:space="preserve">
+    <value>Запустите приложение от имени администратора.</value>
+  </data>
+  <data name="E_CannotChangeAssociatedLicense" xml:space="preserve">
+    <value>Нельзя сменить ключ лицензии.</value>
+  </data>
+  <data name="E_InvalidVersion" xml:space="preserve">
+    <value>Некорректная версия ключа.</value>
+  </data>
+  <data name="UI_CopyrightWarning" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_EmailSupport" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_VisitSupportWebsite" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_SupportInfo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_LicenseFileExists" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_LicenseFiles" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_SelectLicenseFile" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_DetailsCopiedTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_DetailsCopied" xml:space="preserve">
+    <value>Детали были скопированы.</value>
+  </data>
+  <data name="UI_PrivacyPolicy" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_FieldRequired" xml:space="preserve">
+    <value>Заполните поле.</value>
+  </data>
+  <data name="M_NoLicenseWebsite" xml:space="preserve">
+    <value />
+  </data>
+  <data name="M_NoLicenseEmail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="M_NoLicensePhone" xml:space="preserve">
+    <value />
+  </data>
+  <data name="M_NoLicenseReason" xml:space="preserve">
+    <value>Детали валидации:</value>
+  </data>
+  <data name="M_NoLicenseSummary" xml:space="preserve">
+    <value>Возможная причина:</value>
+  </data>
+  <data name="UI_LicenseNotFoundTitle" xml:space="preserve">
+    <value>Лицензия не найдена</value>
+  </data>
+  <data name="UI_LicenseNotFoundSubTitle" xml:space="preserve">
+    <value>Возникли проблемы при валидации лицензии.</value>
+  </data>
+  <data name="UI_NextSteps" xml:space="preserve">
+    <value>Следующий шаг</value>
+  </data>
+  <data name="UI_CopyDetailsToClipboard" xml:space="preserve">
+    <value>Скопировать данные</value>
+  </data>
+  <data name="UI_GenerateDetailedEmailReport" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_DetailsTab" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="E_MachineNotActivated" xml:space="preserve">
+    <value>Данная машина не активирована.</value>
+  </data>
+  <data name="E_MachineMismatch" xml:space="preserve">
+    <value>Код устройства был изменен, нужна повторная генерация ключа.</value>
+  </data>
+  <data name="E_MachineMismatchCheck" xml:space="preserve">
+    <value>Код устройства был изменен, нужна повторная генерация ключа.</value>
+  </data>
+  <data name="E_FileMovedAndInvalidateOnMove" xml:space="preserve">
+    <value>Код устройства был изменен, нужна повторная генерация ключа.</value>
+  </data>
+  <data name="E_ProfileWasDeactivated" xml:space="preserve">
+    <value>Необходим новый ключ.</value>
+  </data>
+  <data name="E_InvalidUnlockCodeForProfile" xml:space="preserve">
+    <value>Необходим новый ключ.</value>
+  </data>
+  <data name="E_TooMuchHardware" xml:space="preserve">
+    <value>Слишком много устройств.</value>
+  </data>
+  <data name="E_TooManyHardwareVariations" xml:space="preserve">
+    <value>Слишком много {0} для генерации хэша.</value>
+  </data>
+  <data name="M_ActivationLimitDescription" xml:space="preserve">
+    <value>Блокирует изпользование приложения на нескольких компьютерах.</value>
+  </data>
+  <data name="M_CopyActivation" xml:space="preserve">
+    <value>Серийный код
+	{SerialNumber}
+	
+HWID / R ID
+	{MachineCode} / {ReferenceId}</value>
+  </data>
+  <data name="M_ActivationRequest" xml:space="preserve">
+    <value>Активировать.</value>
+  </data>
+  <data name="UI_AdminFormTitle" xml:space="preserve">
+    <value>Нужен запуск от администратора</value>
+  </data>
+  <data name="UI_AdminRequiredNotice" xml:space="preserve">
+    <value>Нужен запуск от администратора</value>
+  </data>
+  <data name="UI_AdminVistaNotice" xml:space="preserve">
+    <value>Нужен запуск от администратора</value>
+  </data>
+  <data name="UI_AdminVistaNotice11" xml:space="preserve">
+    <value>Нужен запуск от администратора</value>
+  </data>
+  <data name="UI_Admin2000Notice11" xml:space="preserve">
+    <value>Нужен запуск от администратора</value>
+  </data>
+  <data name="UI_ErrorReport" xml:space="preserve">
+    <value>Отчет об ошибке.</value>
+  </data>
+  <data name="UI_CopyDetails" xml:space="preserve">
+    <value>&amp;Скопировать детали</value>
+  </data>
+  <data name="UI_ShowDetails" xml:space="preserve">
+    <value>Показать</value>
+  </data>
+  <data name="UI_Continue" xml:space="preserve">
+    <value>&amp;Продолжить</value>
+  </data>
+  <data name="M_Minutes" xml:space="preserve">
+    <value>минута</value>
+  </data>
+  <data name="M_Hours" xml:space="preserve">
+    <value>час</value>
+  </data>
+  <data name="M_Days" xml:space="preserve">
+    <value>день</value>
+  </data>
+  <data name="M_Second" xml:space="preserve">
+    <value>секунд</value>
+  </data>
+  <data name="M_Minute" xml:space="preserve">
+    <value>минут</value>
+  </data>
+  <data name="M_Hour" xml:space="preserve">
+    <value>час</value>
+  </data>
+  <data name="M_Day" xml:space="preserve">
+    <value>день</value>
+  </data>
+  <data name="M_And" xml:space="preserve">
+    <value>и</value>
+  </data>
+  <data name="M_Or" xml:space="preserve">
+    <value>или</value>
+  </data>
+  <data name="M_TheManufacturer" xml:space="preserve">
+    <value>изготовитель</value>
+  </data>
+  <data name="M_CurrentAssembly" xml:space="preserve">
+    <value>екущая сборка</value>
+  </data>
+  <data name="M_ExceptionPrompt" xml:space="preserve">
+    <value>Ошибка:</value>
+  </data>
+  <data name="UI_AboutActivationSummary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationRequiredTitle" xml:space="preserve">
+    <value>Необходима активация</value>
+  </data>
+  <data name="UI_AboutActivationRequiredSummary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationRequiredSimpleSummary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationTelephoneEmailOnline" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationTelephoneOnline" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationEmailOnline" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationOnline" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationTelephoneEmail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationTelephone" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationEmail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationImmediately" xml:space="preserve">
+    <value>Вы должны активировать приложение</value>
+  </data>
+  <data name="UI_AboutActivationPrivacy" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationReinstall" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationHardware" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_AboutActivationHardwareMajor" xml:space="preserve">
+    <value>Изменение компонентов ПК приводит к необходимости повторной активации</value>
+  </data>
+  <data name="UI_AboutActivationDeactivate" xml:space="preserve">
+    <value>Изменение компонентов ПК приводит к необходимости повторной активации</value>
+  </data>
+  <data name="UI_AboutActivationToActivate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_DetailsCaption" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="UI_ErrorCaption" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="UI_Retry" xml:space="preserve">
+    <value>&amp;Повторить</value>
+  </data>
+  <data name="UI_Yes" xml:space="preserve">
+    <value>&amp;Да</value>
+  </data>
+  <data name="UI_No" xml:space="preserve">
+    <value>&amp;Нет</value>
+  </data>
+  <data name="UI_Details" xml:space="preserve">
+    <value>&amp;Детали...</value>
+  </data>
+  <data name="UI_Cancel" xml:space="preserve">
+    <value>&amp;Отменить</value>
+  </data>
+  <data name="UI_Abort" xml:space="preserve">
+    <value>&amp;Прервать</value>
+  </data>
+  <data name="UI_Close" xml:space="preserve">
+    <value>&amp;Закрыть</value>
+  </data>
+  <data name="UI_MessageBoxExceptionMessage" xml:space="preserve">
+    <value>{0}
+			Дополнительная информация:
+
+			{1}</value>
+  </data>
+  <data name="UI_Credentials" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_CopyToEmail" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_CopyToClipboard" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="UI_LicenseAgreement" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_MoreInfo" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_Register" xml:space="preserve">
+    <value>&amp;Зарегистрировать</value>
+  </data>
+  <data name="UI_SerialNumber" xml:space="preserve">
+    <value>Серийный номер</value>
+  </data>
+  <data name="UI_ValidationNoticeTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_Activate" xml:space="preserve">
+    <value>Активировать</value>
+  </data>
+  <data name="UI_ActivateLater" xml:space="preserve">
+    <value>Активировать позже</value>
+  </data>
+  <data name="UI_ActivateManually" xml:space="preserve">
+    <value>Активировать с помощью кода.</value>
+  </data>
+  <data name="UI_ActivateManuallyNotice" xml:space="preserve">
+    <value>Обратитесь к продавцу за кодом активации.</value>
+  </data>
+  <data name="UI_ActivationCode" xml:space="preserve">
+    <value>Код активации</value>
+  </data>
+  <data name="UI_ActivationNicknameNote" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UI_ActivationNotice" xml:space="preserve">
+    <value>Активация ПО.</value>
+  </data>
+  <data name="UI_GoBack" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="UI_RegistrationMandatoryNotice" xml:space="preserve">
+    <value>Для продолжения необходимо активировать ПО.</value>
+  </data>
+  <data name="UI_TellMeMoreActivation" xml:space="preserve">
+    <value />
+  </data>
+</root>

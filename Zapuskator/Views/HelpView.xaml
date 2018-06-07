@@ -1,0 +1,163 @@
+﻿<mah:MetroWindow x:Class="Zapuskator.Views.HelpView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zapuskator.Views"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        NonActiveGlowBrush="#CDFF0000"
+        BorderBrush="{DynamicResource AccentColorBrush}"
+        ShowIconOnTitleBar="True"
+        WindowStartupLocation="CenterScreen"
+        Title="Справка" Height="450" Width="800">
+    <Grid>
+        <TabControl SelectedIndex="{Binding SelectedTab}" TabStripPlacement="Left" mah:TabControlHelper.Underlined="SelectedTabItem">
+            <TabItem Header="Настройка">
+                <TextBlock TextWrapping="Wrap">
+                    Запускать от админа. Инструкция:<LineBreak/>
+
+                    1) Нажать иконку папки и выбрать файл cookies(протестировано только с браузерами на движке хрома).<LineBreak/>
+                    Обычно находится в C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default или profile Соответственно нужно быть авторизованым там на сайте бнски. Нажать сохранить рядом.<LineBreak/>
+                    Для яндекс браузера C:\Users\%USERNAME%\AppData\Local\Yandex\YandexBrowser\User Data\Default<LineBreak/>
+                    2) Нажать иконку обновления, если строка не заполнена.<LineBreak/>
+
+                    3) Нажать иконку обновления,если строка не заполнена.<LineBreak/>
+                    4)<LineBreak/>
+                    1.Зайти на сайт бнс (<Hyperlink> https://ru.4game.com/bns/play/?client-app=v2</Hyperlink>) 2.Нажать Ctrl+Shift+S <LineBreak/>
+                    3.Выбрать request вкладку <LineBreak/>
+                    4.Выбрать getUserData и L4G.User(при переключении выставлено по умолчанию)<LineBreak/>
+                    5.Send<LineBreak/>
+                    6.Скопировать id из ответа.<LineBreak/>
+
+                    5)Выбрать версию игры и опции. Указать папку с игрой. Сохранить. Все<LineBreak/>
+                    Каждую неделю после тех работ нужно обновлять вторую строку bearer(или когда подойдет дата в подсказке). Соответственно обновлять саму игру нужно через сайт.<LineBreak/>
+                    У флага notexsturestreaming есть особенность, смена качаства текстур видна только после любого загрузочного экрана.<LineBreak/>
+                </TextBlock>
+            </TabItem>
+            <TabItem Header="Моды">
+                <TextBlock TextWrapping="Wrap">
+                    Инструкция:<LineBreak/>
+                    1. Добавить файл в папку bnsfiles\mods.<LineBreak/>
+                    2.  Если в списке нет мода нажать обновление. <LineBreak/>
+                    3. Во вкладке модификации нажать красную иконку папки(означает, что неизвесно по какому пути его применять) и выбрать директорию, где находится CookedPC.<LineBreak/>
+                    Например D:\Games\Blade and Soul\contents\Local\INNOVA\RUSSIAN. Нужна именно папка RUSSIAN<LineBreak/>
+                    Сплеша что файл модифицирован не будет.<LineBreak/>
+                </TextBlock>
+            </TabItem>
+            <TabItem Header="FAQ">
+                <TextBlock TextWrapping="Wrap">
+                    Что делать если пишет ошибка соединения?<LineBreak/>
+                    Несколько вариантов:<LineBreak/>
+                    *Зайти с браузера, который указан в настройках, на сайт бнс и обновить вторую строку(напротив bearer).<LineBreak/>
+                    *Перелогиниться на сайте и повторить предыдущий пункт.
+                </TextBlock>
+            </TabItem>
+            <TabItem Header="Макросы">
+                <ScrollViewer>
+                <TextBlock TextWrapping="Wrap">
+                    Сначала к сути моего макросника.<LineBreak/>
+Многие уже писали по поводу того, что програмные макросники не работают в игре. Например AutoHotKey и прочие.<LineBreak/>
+Это напрямую связано с их блокировкой фростом. Сам же фрост работает на уровне ядра винды и сделать с этом ничего нельзя.<LineBreak/>
+Но я решил сделать макросник, который тоже работает на этом уровне, соответственно фрост ему сделать ничего не может. <LineBreak/>
+И по сути прога работает как ПО для игровых девайсов, в которых есть своя память и прочее.<LineBreak/>
+Так как популярности он не получил я особо не парился с интерфейсом, упрощением скриптов.<LineBreak/>
+Для начала установка:<LineBreak/>
+1) Кликнуть на "макрос"<LineBreak/>
+2) согласиться с установкой<LineBreak/>
+3) Перезагрузиться(для начала программу, если установка предложится второй раз перегрузить комп)<LineBreak/>
+Вкладка мышь работает по следующим принципам:<LineBreak/>
+	/*MiddleDown=Numpad8|Down*/<LineBreak/>
+	/*MiddleUp=Numpad8|Up */<LineBreak/>
+	MOUSE_BUTTON_5_Down=MacrosToggleMode2<LineBreak/>
+	MOUSE_BUTTON_4_Down=Macros3<LineBreak/>
+	MOUSE_WHEEL=Off<LineBreak/>
+По коду кнопок будут высвечиваться подсказки. Вкладка предназначена для переопределения кнопок и назначения макросов.<LineBreak/>
+Конструкция вида /* текст */ является комментарием и игнорируется програмой.<LineBreak/>
+
+Разберу строку MOUSE_BUTTON_5_Down=MacrosToggleMode2.<LineBreak/>
+Есть MOUSE_BUTTON_5_Down и MOUSE_BUTTON_5_Up. Up означает отпускание кнопки, Down наоборот нажатие.<LineBreak/>
+Она означает что при нажатии 5й кнопки мыши(кнопка "вперед") произойдет активация второго макроса. При повторном нажатии он отключится.<LineBreak/>
+
+Следующий пример: MOUSE_BUTTON_4_Down=Macros3.<LineBreak/>
+Тоже самое что и пример выше, но макрос работает пока кнопка зажата и сразу завершает работу как отпустишь кнопку.<LineBreak/>
+
+Дальше MOUSE_WHEEL=Off.<LineBreak/>
+Отключает колесико. Нужно когда колесико мышки сломано и например дергается постоянно в игре.<LineBreak/>
+
+Еще один MiddleDown=Numpad8|Down и MiddleUp=Numpad8|Up (переопределение кнопок с мышки на клавиатуру или другую клавишу мыши)<LineBreak/>
+Означает что вместо средней кнопки на мышке будет нажиматься Numpad8.<LineBreak/>
+Обязательным условием такого переопределения является наличие обеих флагов состояния кнопки(Up и Down).<LineBreak/>
+Тоесть должно быть правило на нажатие кнопки и ее отжатие.<LineBreak/>
+
+
+
+Описание скриптов к макросам:<LineBreak/>
+for (;;){<LineBreak/>
+ SendKey(Keys.Four);<LineBreak/>
+ Sleep(1);<LineBreak/>
+ SendMouseEvent(MouseState.MOUSE_BUTTON_2_Down);<LineBreak/>
+ Sleep(10);<LineBreak/>
+ SendMouseEvent(MouseState.MOUSE_BUTTON_2_Up);<LineBreak/>
+ Sleep(1);<LineBreak/>
+}<LineBreak/>
+Конструкция for (;;){} означает что макрос выполняется в цикле. Без этого он сработает только один раз. Нельзя забывать ; ставить как на примере выше.<LineBreak/>
+Макрос выше просто спамит четверку и ПКМ. На клавиши можно поставить просто нажатие, то на мышку указывается и нажатие и отпускание кнопки.<LineBreak/>
+Но для клавиатуры тоже можно указать это отдельно, например так: SendKey(Keys.Four,KeyState.Down); и когда нужно SendKey(Keys.Four,KeyState.Up);<LineBreak/>
+
+Возможны и более сложные алгоритмы для макросов, например:<LineBreak/>
+var i =3;<LineBreak/>
+for (;;){<LineBreak/>
+ SendKey(Keys.Two);<LineBreak/>
+ Sleep(4);<LineBreak/>
+ SendKey(Keys.Four);<LineBreak/>
+ Sleep(8);<LineBreak/>
+ SendKey(Keys.V);<LineBreak/>
+ Sleep(8);<LineBreak/>
+ if (i ==3)<LineBreak/>
+ {<LineBreak/>
+  SendKey(Keys.F);<LineBreak/>
+  Sleep(1);<LineBreak/>
+  i = 0;<LineBreak/>
+ }<LineBreak/>
+ i++;<LineBreak/>
+ SendMouseEvent(MouseState.MOUSE_BUTTON_2_Down);<LineBreak/>
+ Sleep(25);<LineBreak/>
+ SendMouseEvent(MouseState.MOUSE_BUTTON_2_Up);<LineBreak/>
+ Sleep(1);<LineBreak/>
+ SendMouseEvent(MouseState.MOUSE_BUTTON_2_Down);<LineBreak/>
+ Sleep(25);<LineBreak/>
+ SendMouseEvent(MouseState.MOUSE_BUTTON_2_Up);<LineBreak/>
+ Sleep(1);<LineBreak/>
+}<LineBreak/>
+Это мой макрос на варлока, когда нет крыльев или разорения. Он каждые 3 прогона кидает F.<LineBreak/>
+
+Если по простому, например для макроса на зажатие F на колесо все что нужно это указать в одном из табов для макросов.(Его номер от этого зависит)<LineBreak/>
+for (;;){<LineBreak/>
+ SendKey(Keys.F);<LineBreak/>
+ Sleep(1);<LineBreak/>
+}<LineBreak/>
+И во вкладке мыши например MiddleDown=MacrosToggleMode2<LineBreak/>
+Клавиатуру еще делаю, тобишь вкладка не работает. Назначать макросы и переопределять кнопки можно только с мышки сейчас.(не путать с нажатиями и переопределением с мыши на клаву).<LineBreak/>
+                </TextBlock>
+                </ScrollViewer>
+            </TabItem>
+            <TabItem Header="Персики">
+                <TextBlock TextWrapping="Wrap">
+В первую очередь нужно выставить опции.<LineBreak/>
+                    Если выставлена синхронизация вы можете предлагать и получать расписание событий от других игроков для своего сервера.<LineBreak/>
+                    Оповещение высвечивается за 5 минут до события на 6 секунд, а также печатается в чат.<LineBreak/>
+                    Внимание! Кнопка применить, при включенной синхронизации, отправляет на сервер время, которым могут воспользоваться другие.<LineBreak/>
+                    Стоит быть уверенным, что время и порядок событий выставлено верно.<LineBreak/>
+                    Уведомления при полноэкранном режиме игры скорее всего работать не будут.<LineBreak/>
+                    Сетевое время будет сбрасываться в 5 утра<LineBreak/>
+                    К сожалению сейчас на персиках людей не много и время может посреди дня сбиться на пол часа<LineBreak/>
+                </TextBlock>
+            </TabItem>
+            <TabItem Header="Контакты">
+                <Hyperlink>https://vk.com/nv_soliardi</Hyperlink>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</mah:MetroWindow>

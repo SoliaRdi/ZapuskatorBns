@@ -1,0 +1,171 @@
+﻿<UserControl x:Class="Zapuskator.Views.GameSettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Zapuskator.Views"
+             xmlns:properties="clr-namespace:Zapuskator.Properties"
+             xmlns:cal="http://www.caliburnproject.org"
+             mah:DialogParticipation.Register="{Binding}"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:framework="clr-namespace:Zapuskator.Framework"
+             mc:Ignorable="d"
+             d:DesignHeight="200" d:DesignWidth="550">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <Expander Margin="0"
+                      Header="Аккаунт"
+                      IsExpanded="False">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0">Cookie:</Label>
+                    <TextBox Grid.Column="1"
+                             Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.Chrome_Path}"
+                             Grid.ColumnSpan="4" Margin="0 5" Grid.Row="0" />
+                    <StackPanel Grid.Column="5" Grid.Row="0" VerticalAlignment="Center" Orientation="Horizontal"
+                                HorizontalAlignment="Center">
+                        <Button Margin="5 0" Style="{DynamicResource AccentedSquareButtonStyle}"
+                                cal:Message.Attach="ChromeFilePath()">
+                            <iconPacks:PackIconMaterial Kind="FolderLock" />
+                        </Button>
+                    </StackPanel>
+                    <Label Grid.Row="1">bearer:</Label>
+                    <TextBox Grid.Column="1"
+                             Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.Authorization}"
+                             Grid.ColumnSpan="4" Margin="0 5" Grid.Row="1" />
+                    <StackPanel Grid.Column="5" Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal"
+                                HorizontalAlignment="Center">
+                        <Button Margin="5 0" Style="{DynamicResource AccentedSquareButtonStyle}"
+                                cal:Message.Attach="ReloadCookie()">
+                            <iconPacks:PackIconMaterial Kind="Reload" />
+                        </Button>
+
+                    </StackPanel>
+                    <Label Grid.Row="2">HWID:</Label>
+                    <TextBox Grid.Column="1" IsReadOnly="True"
+                             Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.HWID}"
+                             HorizontalScrollBarVisibility="Auto" Grid.ColumnSpan="4" Margin="0 5"
+                             Grid.Row="2" />
+                    <StackPanel Grid.Column="5" Grid.Row="2" VerticalAlignment="Center" Orientation="Horizontal"
+                                HorizontalAlignment="Center">
+                        <Button Margin="5 0" Style="{DynamicResource AccentedSquareButtonStyle}"
+                                cal:Message.Attach="GetHWID()">
+                            <iconPacks:PackIconMaterial Kind="Reload" />
+                        </Button>
+
+                    </StackPanel>
+                    <Label Grid.Row="3">uid:</Label>
+                    <TextBox Grid.Column="1"
+                             Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.Uid}"
+                             HorizontalScrollBarVisibility="Auto" TextWrapping="Wrap" Grid.ColumnSpan="4" Margin="0 5"
+                             Grid.Row="3" />
+                    <StackPanel Grid.Column="5" Grid.Row="3" VerticalAlignment="Center" Orientation="Horizontal"
+                                HorizontalAlignment="Center">
+                        <Button Style="{DynamicResource AccentedSquareButtonStyle}" cal:Message.Attach="SaveSettings()"
+                                Margin="5 0">
+                            <iconPacks:PackIconMaterial Kind="ContentSaveSettings" />
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </Expander>
+            <Expander Margin="0"
+                      Header="Игра"
+                      IsExpanded="True">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*" />
+                        <ColumnDefinition Width="0.65*" />
+                        <ColumnDefinition Width="0.15*" />
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="0.5*" />
+                        <RowDefinition Height="0.5*" />
+                    </Grid.RowDefinitions>
+                    <Border Grid.ColumnSpan="3" BorderBrush="#FFCD9317" BorderThickness="0 2 0 1" />
+                    <Label Grid.Row="0">Папка игры:</Label>
+                    <TextBox Grid.Column="1"
+                             Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.BnsPath,Mode=TwoWay}"
+                             Margin="0 5" Grid.Row="0" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" />
+                    <StackPanel Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" Orientation="Horizontal"
+                                HorizontalAlignment="Center">
+                        <Button Style="{DynamicResource AccentedSquareButtonStyle}" Margin="5 0"
+                                cal:Message.Attach="BnsFilePath()">
+                            <iconPacks:PackIconMaterial Kind="FolderOpen" />
+                        </Button>
+                        <Button Style="{DynamicResource AccentedSquareButtonStyle}" cal:Message.Attach="SaveSettings()"
+                                Margin="5 0">
+                            <iconPacks:PackIconMaterial Kind="ContentSaveSettings" />
+                        </Button>
+                    </StackPanel>
+                    <ComboBox
+                        SelectedIndex="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.BnsPriority}"
+                        Margin="2 5" Grid.Column="0" Grid.Row="1">
+                        <ComboBoxItem>x32</ComboBoxItem>
+                        <ComboBoxItem>x64</ComboBoxItem>
+                    </ComboBox>
+                    <WrapPanel Margin="10 2" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1">
+                        <CheckBox
+                            IsChecked="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.BnsUseAllCores}"
+                            Content="USEALLAVAILABLECORES" />
+                        <CheckBox
+                            IsChecked="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.BnsNoTxStream}"
+                            Content="NO TEXSTURE STREAMING" />
+                        <CheckBox
+                            IsChecked="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.NormalLaunch}"
+                            Content="Обычный запуск без учета параметров" />
+                    </WrapPanel>
+
+                    <WrapPanel Margin="0 0" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" VerticalAlignment="Top">
+                        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"
+                                   Margin="5 0">
+                            Пинг:
+                        </TextBlock>
+                        <ComboBox SelectedIndex="{Binding SelectedServer}" Margin="5 0" MinWidth="120">
+                            <ComboBoxItem>Рубин</ComboBoxItem>
+                            <ComboBoxItem>Арена 1</ComboBoxItem>
+                            <ComboBoxItem>Арена 2</ComboBoxItem>
+                            <ComboBoxItem>Изумруд</ComboBoxItem>
+                            <ComboBoxItem>Аметист</ComboBoxItem>
+                            <ComboBoxItem>Сапфир</ComboBoxItem>
+                        </ComboBox>
+                        <mah:NumericUpDown
+                            Value="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.PingPosX}"
+                            mah:TextBoxHelper.UseFloatingWatermark="True"
+                            mah:TextBoxHelper.Watermark="Ширина"
+                            NumericInputMode="Numbers"
+                            Speedup="false" />
+                        <mah:NumericUpDown
+                            Value="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.PingPosY}"
+                            Margin="5 0" mah:TextBoxHelper.UseFloatingWatermark="True"
+                            mah:TextBoxHelper.Watermark="Высота"
+                            NumericInputMode="Numbers"
+                            Speedup="false" />
+                        <ToggleButton cal:Message.Attach="TogglePing()" Style="{DynamicResource MetroFlatToggleButton}"
+                                      Margin="10 0">
+                            Запустить пинг
+                        </ToggleButton>
+                    </WrapPanel>
+
+                </Grid>
+            </Expander>
+        </StackPanel>
+    </ScrollViewer>
+
+</UserControl>

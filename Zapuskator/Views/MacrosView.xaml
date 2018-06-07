@@ -1,0 +1,83 @@
+﻿<Window x:Class="Zapuskator.Views.MacrosView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zapuskator"
+        xmlns:properties="clr-namespace:Zapuskator.Properties"
+        mc:Ignorable="d"
+        xmlns:cal="http://www.caliburnproject.org"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:framework="clr-namespace:Zapuskator.Framework"
+        Title="Редактирование макроса" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <TabControl TabStripPlacement="Left">
+            <TabItem Header="Мышь" mah:ControlsHelper.HeaderFontSize="15">
+                <Grid>
+                    <local:RichTextBoxEx AcceptsReturn="True" TextWrapping="Wrap"
+                                         Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.MacrosMouse}"
+                                         AutoAddWhiteSpaceAfterTriggered="{Binding IsChecked,ElementName=chkAutoAddWhitespace}"
+                                         ContentAssistTriggers="{Binding ContentAssistTriggers}"
+                                         ContentAssistSource="{Binding ContentAssistSource}" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Клавиатура" mah:ControlsHelper.HeaderFontSize="15">
+                <Grid>
+                    <local:RichTextBoxEx AcceptsReturn="True" TextWrapping="Wrap"
+                                         Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.MacrosKeyboard}"
+                                         AutoAddWhiteSpaceAfterTriggered="{Binding IsChecked,ElementName=chkAutoAddWhitespace}"
+                                         ContentAssistTriggers="{Binding ContentAssistTriggers}"
+                                         ContentAssistSource="{Binding ContentAssistSource}" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Макрос" mah:ControlsHelper.HeaderFontSize="15">
+                <TabControl>
+                    <TabItem Header="Макрос1" mah:ControlsHelper.HeaderFontSize="15">
+                        <Grid>
+                            <local:RichTextBoxEx AcceptsReturn="True" TextWrapping="Wrap"
+                                                 Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.LoopMacros}"
+                                                 AutoAddWhiteSpaceAfterTriggered="{Binding IsChecked,ElementName=chkAutoAddWhitespace}"
+                                                 ContentAssistTriggers="{Binding ContentAssistTriggers}"
+                                                 ContentAssistSource="{Binding ContentAssistSource}" />
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Макрос2" mah:ControlsHelper.HeaderFontSize="15">
+                        <Grid>
+                            <local:RichTextBoxEx AcceptsReturn="True" TextWrapping="Wrap"
+                                                 Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.LoopMacros2}"
+                                                 AutoAddWhiteSpaceAfterTriggered="{Binding IsChecked,ElementName=chkAutoAddWhitespace}"
+                                                 ContentAssistTriggers="{Binding ContentAssistTriggers}"
+                                                 ContentAssistSource="{Binding ContentAssistSource}" />
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Макрос3" mah:ControlsHelper.HeaderFontSize="15">
+                        <Grid>
+                            <local:RichTextBoxEx AcceptsReturn="True" TextWrapping="Wrap"
+                                                 Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.LoopMacros3}"
+                                                 AutoAddWhiteSpaceAfterTriggered="{Binding IsChecked,ElementName=chkAutoAddWhitespace}"
+                                                 ContentAssistTriggers="{Binding ContentAssistTriggers}"
+                                                 ContentAssistSource="{Binding ContentAssistSource}" />
+                        </Grid>
+                    </TabItem>
+                    <TabItem Header="Макрос4" mah:ControlsHelper.HeaderFontSize="15">
+                        <Grid>
+                            <local:RichTextBoxEx AcceptsReturn="True" TextWrapping="Wrap"
+                                                 Text="{Binding Source={x:Static framework:Services.Profiles}, Path=CurrentProfile.GeneralSettings.LoopMacros4}"
+                                                 AutoAddWhiteSpaceAfterTriggered="{Binding IsChecked,ElementName=chkAutoAddWhitespace}"
+                                                 ContentAssistTriggers="{Binding ContentAssistTriggers}"
+                                                 ContentAssistSource="{Binding ContentAssistSource}" />
+                        </Grid>
+                    </TabItem>
+                </TabControl>
+
+            </TabItem>
+        </TabControl>
+        <Button Height="40"  HorizontalAlignment="Left" Margin="5" Click="SaveMacros2">Сохранить</Button>
+    </Grid>
+</Window>

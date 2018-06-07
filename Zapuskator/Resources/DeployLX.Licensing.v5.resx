@@ -1,0 +1,1931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+	</resheader>
+
+	<collection id="Common" name="Common Errors">
+		<summary>Errors returned at any time.</summary>
+		<group class="Errors" id="Validation" name="Validation Errors">
+			<summary>Errors that can occur when attempting to locate and validate a license.</summary>
+		</group>
+		<group class="Errors" id="Limit" name="Common Limit Errors">
+			<summary>Each limit defines errors specific to it's implementation. This group of errors is shared across all limits.</summary>
+		</group>
+		<group class="Errors" id="Serialize" name="License Serialization Errors">
+			<summary>Errors that occur when a license is serialized, saved or loaded from disk.</summary>
+		</group>
+		<group class="Errors" id="Codes" name="Serial Number, Activation and Extension Code Errors">
+			<summary>The following errors can occur when processing or validating license codes such as serial numbers, activation codes and extensions.</summary>
+		</group>
+		<group class="Errors" id="Server" name="Server Errors">
+			<summary>Errors that can occur specifically when trying to contact a license server.</summary>
+		</group>
+		<group class="Errors" id="Common" name="Runtime Errors" />
+		<group class="Errors" id="Config" name="Configuration Errors">
+			<summary>Errors that occur when reading configuration settings from the application's .config file or the registry.</summary>
+		</group>
+		<!-- group name="Not Set" / -->
+	</collection>
+
+	<collection id="Shared" name="Shared Messages and Form Text">
+		<summary>These resources are shared by all the classes and forms in the licensing library.</summary>
+		<group class="Messages" id="SharedMessage" name="Shared Messages" />
+		<group class="UI" id="SharedUI" name="Shared Form Text" />
+		<group class="UI" id="ErrorUI" name="Error Report Form Text" />
+		<group class="UI" id="AdminUI" name="Admin Credentials Form Text" />
+		<group class="UI" id="ProxyUI" name="Proxy Credentials Form Text" />
+	</collection>
+
+	<collection id="Activation" name="Activation Limit Errors and Messages">
+		<summary>Errors and messages used by the Activation Limit.</summary>
+		<group class="Errors" id="Activation" name="Activation Limit Errors" />
+		<group class="Messages" id="ActivationMessage" name="Activation Limit Messages" />
+		<group class="UI" id="ActivationUI" name="Activation Forms Text" />
+		<group class="UI" id="DeactivationUI" name="Deactivation Forms Text" />
+		<group class="UI" id="ActivationAboutUI" name="About Activation Form Text" />
+	</collection>
+
+	<collection id="Application" name="Application Limit Errors and Messages">
+		<summary>Errors and messages used by the Application Limit.</summary>
+		<group class="Errors" id="Application" name="Application Limit Errors" />
+		<group class="Messages" id="ApplicationMessage" name="Application Limit Messages" />
+	</collection>
+	
+	<collection id="ApplicationType" name="Application Type Limit Errors and Messages">
+		<summary>Errors and messages used by the Application Type Limit.</summary>
+		<group class="Errors" id="ApplicationType" name="Application Type Limit Errors" />
+		<group class="Messages" id="ApplicationTypeMessage" name="Application Type Limit Messages" />
+	</collection>
+	
+	<collection id="Beta" name="Beta Limit Errors and Messages">
+		<summary>Errors and messages used by the Beta Limit.</summary>
+		<group class="Errors" id="Beta" name="Beta Limit Errors" />
+		<group class="Messages" id="BetaMessage" name="Beta Limit Messages" />
+	</collection>
+
+	<collection id="Feature" name="Feature Limit Errors and Messages">
+		<summary>Errors and messages used by the Feature Limit.</summary>
+		<group class="Errors" id="Feature" name="Feature Limit Errors" />
+		<group class="Messages" id="FeatureMessage" name="Feature Limit Messages" />
+	</collection>	
+
+	<collection id="Designtime" name="Designtime and Runtime Limit Errors and Messages">
+		<summary>Errors and messages used by the Designtime and Runtime Limits.</summary>
+		<group class="Errors" id="Designtime" name="Designtime Limit Errors" />
+		<group class="Messages" id="DesigntimeMessage" name="Designtime Limit Messages" />
+		<group class="Errors" id="Runtime" name="Runtime Limit Errors" />
+		<group class="Messages" id="RuntimeMessage" name="Runtime Limit Messages" />
+	</collection>
+
+	<collection id="DomainName" name="Domain Name Limit Errors and Messages">
+		<summary>Errors and messages used by the Domain Name Limit.</summary>
+		<group class="Errors" id="DomainName" name="Domain Name Limit Errors" />
+		<group class="Messages" id="DomainNameMessage" name="Domain Name Limit Messages" />
+	</collection>
+
+	<collection id="Extend" name="Extendable Limits Errors and Messages">
+		<summary>Errors and messages used by the Extendable Limits.</summary>
+		<group class="Errors" id="Extend" name="Extendable Limits Errors" />
+		<group class="UI" id="ExtendUI" name="Extendable Limits Form Text" />
+		<group class="Messages" id="ExtendMessage" name="Extendable Limits Messages" />
+	</collection>
+
+	<collection id="Html" name="HTML Branded Limit Errors and Messages">
+		<summary>Errors and messages used by the HTML Branded Limit.</summary>
+		<group class="Errors" id="Html" name="HTML Branded Limit Errors" />
+		<group class="Messages" id="HtmlMessage" name="HTML Branded Limit Messages" />
+	</collection>
+
+	<collection id="IP" name="IP Address Limit Errors and Messages">
+		<summary>Errors and messages used by the IP Address Limit.</summary>
+		<group class="Errors" id="IP" name="IP Address Limit Errors" />
+		<group class="Messages" id="IPMessage" name="IP Address Limit Messages" />
+	</collection>
+	
+	<collection id="Invalid" name="Invalid Limit Errors and Messages">
+		<summary>Errors and messages used by the Invalid Limit.</summary>
+		<group class="Errors" id="Invalid" name="Invalid Limit Errors" />
+		<group class="Messages" id="InvalidMessage" name="Invalid Limit Messages" />
+	</collection>
+
+	<collection id="LicenseServer" name="License Server Limit Errors and Messages">
+		<summary>Errors and messages used by the License Server Limit.</summary>
+		<group class="Errors" id="LicenseServer" name="License Server Limit Errors" />
+		<group class="Messages" id="LicenseServerMessage" name="License Server Limit Messages" />
+	</collection>
+	
+	<collection id="Or" name="Or Limit Errors and Messages">
+		<summary>Errors and messages used by the Or Limit.</summary>
+		<group class="Errors" id="Or" name="Or Limit Errors" />
+		<group class="Messages" id="OrMessage" name="Or Limit Messages" />
+	</collection>
+
+	<collection id="OS" name="OS Limit Errors and Messages">
+		<summary>Errors and messages used by the OS Limit.</summary>
+		<group class="Errors" id="OS" name="OS Limit Errors" />
+		<group class="Messages" id="OSMessage" name="OS Limit Messages" />
+	</collection>
+
+	<collection id="Publisher" name="Publisher Limit Errors and Messages">
+		<summary>Errors and messages used by the Publisher Limit.</summary>
+		<group class="Errors" id="Publisher" name="Publisher Limit Errors" />
+		<group class="Messages" id="PublisherMessage" name="Publisher Limit Messages" />
+	</collection>
+
+	<collection id="Registration" name="Registration Limit Errors and Messages">
+		<summary>Errors and messages used by the Registration Limit.</summary>
+		<group class="Errors" id="Registration" name="Registration Limit Errors" />
+		<group class="Messages" id="RegistrationMessage" name="Registration Limit Messages" />
+		<group class="UI" id="RegistrationUI" name="Registration Forms Text" />
+	</collection>
+
+	<collection id="Reset" name="Reset Limit Errors and Messages">
+		<summary>Errors and messages used by the Rest Limit.</summary>
+		<group class="Errors" id="Reset" name="Reset Limit Errors" />
+		<group class="Messages" id="ResetMessage" name="Reset Limit Messages" />
+	</collection>
+	
+	<collection id="Script" name="Script Limit Errors and Messages">
+		<summary>Errors and messages used by the Script Limit.</summary>
+		<group class="Errors" id="Script" name="Script Limit Errors" />
+		<group class="Messages" id="ScriptMessage" name="Script Limit Messages" />
+	</collection>
+
+	<collection id="Service" name="Service Limit Errors and Messages">
+		<summary>Errors and messages used by the Service Limit.</summary>
+		<group class="Errors" id="Service" name="Service Limit Errors" />
+		<group class="Messages" id="ServiceMessage" name="Service Limit Messages" />
+	</collection>
+
+	<collection id="Sessions" name="Sessions Limit Errors and Messages">
+		<summary>Errors and messages used by the Sessions Limit.</summary>
+		<group class="Errors" id="Sessions" name="Sessions Limit Errors" />
+		<group class="Messages" id="SessionsMessage" name="Sessions Limit Messages" />
+	</collection>
+
+	<collection id="Splash" name="Splash Limit Errors and Messages">
+		<summary>Errors and messages used by the Splash Limit.</summary>
+		<group class="Errors" id="Splash" name="Splash Limit Errors" />
+		<group class="Messages" id="SplashMessage" name="Splash Limit Messages" />
+	</collection>
+
+	<collection id="Time" name="Time Limit Errors and Messages">
+		<summary>Errors and messages used by the Time Limit.</summary>
+		<group class="Errors" id="Time" name="Time Limit Errors" />
+		<group class="Messages" id="TimeMessage" name="Time Limit Messages" />
+	</collection>
+
+	<collection id="TimeServer" name="Time Server Limit Errors and Messages">
+		<summary>Errors and messages used by the Time Server Limit.</summary>
+		<group class="Errors" id="TimeServer" name="Time Server Limit Errors" />
+		<group class="Messages" id="TimeServerMessage" name="Time Server Limit Messages" />
+	</collection>
+
+	<collection id="Trial" name="Trial Limit Errors and Messages">
+		<summary>Errors and messages used by the Trial Limit.</summary>
+		<group class="Errors" id="Trial" name="Trial Limit Errors" />
+		<group class="Messages" id="TrialMessage" name="Trial Limit Messages" />
+	</collection>
+
+	<collection id="Type" name="Type Limit Errors and Messages">
+		<summary>Errors and messages used by the Type Limit.</summary>
+		<group class="Errors" id="Type" name="Type Limit Errors" />
+		<group class="Messages" id="TypeMessage" name="Type Limit Messages" />
+	</collection>
+
+
+	<collection id="Upgrade" name="Upgrade Limit Errors and Messages">
+		<summary>Errors and messages used by the Upgrade Limit.</summary>
+		<group class="Errors" id="Upgrade" name="Upgrade Limit Errors" />
+		<group class="Messages" id="UpgradeMessage" name="Upgrade Limit Messages" />
+	</collection>
+
+	<collection id="Use" name="Use Limit Errors and Messages">
+		<summary>Errors and messages used by the Use Limit.</summary>
+		<group class="Errors" id="Use" name="Use Limit Errors" />
+		<group class="Messages" id="UseMessage" name="Use Limit Messages" />
+	</collection>
+
+	<collection id="Version" name="Version Limit Errors and Messages">
+		<summary>Errors and messages used by the Version Limit.</summary>
+		<group class="Errors" id="Version" name="Version Limit Errors" />
+		<group class="Messages" id="VersionMessage" name="Version Limit Messages" />
+	</collection>
+
+	<collection id="State" name="State Limit Errors and Messages">
+		<summary>Errors and messages used by the State Limit.</summary>
+		<group class="Errors" id="State" name="State Limit Errors" />
+		<group class="Messages" id="StateMessage" name="State Limit Messages" />
+	</collection>
+
+	<collection id="FeatureFilter" name="Feature Filter Limit Errors and Messages">
+		<summary>Errors and messages used by the Feature Filter Limit.</summary>
+		<group class="Errors" id="FeatureFilter" name="Feature Filter Limit Errors" />
+		<group class="Messages" id="FeatureFilterMessage" name="Feature Filter Limit Messages" />
+	</collection>
+	
+	<collection id="VirtualMachine" name="Virtual Machine Limit Errors and Messages">
+		<summary>Errors and messages used by the Virtual Machine Limit.</summary>
+		<group class="Errors" id="VirtualMachine" name="Virtual Machine Limit Errors" />
+		<group class="Messages" id="VirtualMachineMessage" name="Virtual Machine Limit Messages" />
+	</collection>
+
+	<collection id="RemoteDesktop" name="Remote Desktop Limit Errors and Messages">
+		<summary>Errors and messages used by the Remote Desktop Limit.</summary>
+		<group class="Errors" id="RemoteDesktop" name="Remote Desktop Limit Errors" />
+		<group class="Messages" id="RemoteDesktopMessage" name="Remote Desktop Limit Messages" />
+	</collection>
+	
+	<collection id="Online" name="Online Limit Errors and Messages">
+		<summary>Errors and messages used by the Online Limit.</summary>
+		<group class="Errors" id="Online" name="Online Limit Errors" />
+		<group class="Messages" id="OnlineMessage" name="Online Limit Messages" />
+	</collection>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- ERRORS -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+
+
+	<!-- Serial Number, Activation and Extension Code Errors -->
+
+	<data name="E_CouldNotInitializeFromSerialNumber" group="Codes">
+		<value>Could not initialize the license state from the serial number.</value>
+	</data>
+	<data name="E_InvalidCharacterSet" group="Codes">
+		<value>Invalid character set. You can only use upper case letters and numbers and each character may appear only once.</value>
+	</data>
+	<data name="E_InvalidSerialNumber" group="Codes">
+		<value>{0} is not a valid serial number.</value>
+		<variable id="{0}" name="Serial Number" />
+	</data>
+	<data name="E_MissingSerialNumber" group="Codes">
+		<value>License has not been unlocked with a serial number.</value>
+	</data>
+	<data name="E_MissingSerialNumberUpgrade" group="Codes">
+		<value>Serial number for previous version not provided.</value>
+		<help comments="Occurs when a license contains an Upgrade Limit but the serial number for the original version was not provided"/>
+	</data>
+	<data name="E_Only8FlagsAllowed" group="Codes">
+		<value>Only 8 flags can be set in a serial number.</value>
+	</data>
+	<data name="E_ProcessorAlreadyRegistered" group="Codes">
+		<value>A processor has already been registered for that assembly and algorithm.</value>
+	</data>
+	<data name="E_ProcessorMethodNotFound" group="Codes">
+		<value>The method '{0}' was not found on the processor.</value>
+		<help comments="The method declared when the custom code processor was registered could not be found on the target object. Check the spelling" />
+		<variable id="{0}" name="Code Processing Method" />
+	</data>
+	<data name="E_RequestingNewSerialNumber" group="Codes">
+		<value>New serial number required.</value>
+	</data>
+	<data name="E_SerialNumberMismatch" group="Codes">
+		<value>Invalid serial number. Must begin with {0}. Try setting SerialNumberInfo.Prefix instead.</value>
+		<variable id="{0}" name="Serial Number Prefix" />
+	</data>
+
+	<!-- Validation -->
+	<data name="E_AdminRequiredFirstRun" group="Validation">
+		<value>An administrator must run the application at least once before limited users can be validated.</value>
+	</data>
+	<data name="E_AspNetNotBuffered" group="Validation">
+		<value>ASP.NET Page must be buffered. Set Buffer="true" in the &lt;%@ Page %&gt; directive.</value>
+	</data>
+	<data name="E_CacheReset" group="Validation">
+		<value>License cache was reset during validation.</value>
+		<help comments="License was performing delayed validation and the cache was reset before it could finish processing." />
+	</data>
+	<data name="E_CouldNotValidate" group="Validation">
+		<value>Could not validate license "{0}" in {1}.</value>
+		<help comments="DeployLX attempted to validate the license but either the license or one of its limits was not valid." />
+		<variable id="{0}" name="License" />
+		<variable id="{1}" name="License File" />
+	</data>
+	<data name="E_CouldNotValidateCached" group="Validation">
+		<value>Could not grant cached license "{0}" in {1}. Will retry with full validation.</value>
+		<variable id="{0}" name="License" />
+		<variable id="{1}" name="License File" />
+		<help comments="When trying to issue a cached license DeployLX encountered an error and the cached instance cannot be used. Validation will restart as if no cached licenses were available." />
+	</data>
+	<data name="E_DelayedFailed" group="Validation">
+		<value>Delayed validation failed.</value>
+		<help comments="While performing the delayed validation checks the license could not be validated." />
+	</data>
+	<data name="E_ErrorLoadingLicenseFile" group="Validation">
+		<value>Error loading license  file at {0}.</value>
+		<variable id="{0}" name="Path" />
+	</data>
+	<data name="E_InvalidPublicKey" group="Validation">
+		<value>Invalid public key.</value>
+	</data>
+	<data name="E_InvalidSearchPath" group="Validation">
+		<value>Invalid search path: {0}.</value>
+		<variable id="{0}" name="Path" />
+	</data>
+	<data name="E_InvalidSignature" group="Validation">
+		<value>The license has been modified.</value>
+		<help comments="This error can occur when the license file has been modified outside of the DeployLX manager and the license was not resigned. Be sure to call SignLicense with the associated LicenseKey when modifying licenses in on the server." />
+	</data>
+	<data name="E_CannotValidateSignature" group="Validation">
+		<value>Cannot validate signature. Try validating in Developer Mode to capture details.</value>
+		<help comments="Occurs when an unanticipated exception is thrown while the signature is being validated." />
+	</data>
+	<data name="E_MissingPublicKey" group="Validation">
+		<value>Missing public key in assembly {0}.</value>
+		<help comments="The DeployLXKeys file has not been added to the assembly. Use the Project Wizard to add the keys to the assembly." />
+		<variable id="{0}" name="Assembly Name" />
+	</data>
+	<data name="E_NoComponentInLicense" group="Validation">
+		<value>The {0} component is not controlled by this license.</value>
+		<variable id="{0}" name="Component Type" />
+		<help comments="Returned when a protected class is not found in the licenses classes collection. Only applies when the classes collection has at least one class defined." />
+	</data>
+	<data name="E_NoLicense" group="Validation">
+		<value>A valid license could not be obtained for '{0}'. Please contact {1} for assistance.</value>
+		<variable id="{0}" name="Product Name" />
+		<variable id="{1}" name="Publisher Contact Information" />
+	</data>
+	<data name="E_NoLicensesFound" group="Validation">
+		<value>No licenses found in {0}.</value>
+		<variable id="{0}" name="Folder" />
+	</data>
+	<data name="E_NoLicensesFoundSummary" group="Validation">
+		<value>No licenses found.</value>
+		<variable id="{0}" name="Folder" />
+	</data>
+	<data name="E_NoCompiledLicenses" group="Validation">
+		<value>No compiled licenses found.</value>
+	</data>
+	<data name="E_DifferentProduct">
+		<value>Signed with keys for a different product.</value>
+	</data>
+	<data name="E_OriginalUpdated" group="Validation">
+		<value>The original license file at '{0}' has been updated, replacing mirrored copy.</value>
+		<variable id="{0}" name="Path" />
+		<help comments="When modifications to the license need to be saved but DeployLX cannot write to the original file a copy is made in shared storage. This error can occur when attempting to validate the copy when the original has been updated." />
+	</data>
+	<data name="E_RetriedTooManyTimes" group="Validation">
+		<value>License validation retried too many times.</value>
+		<help comments="Licenses can be modified at the server and updated on the local machine. When this happens validation restarts with the new updated license. Retrying too many times results in an error to prevent lockups." />
+	</data>
+	<data name="E_SkipTrial" group="Validation">
+		<value>{0} in {1} skipped, trial licenses are disabled.</value>
+		<variable id="{0}" name="License" />
+		<variable id="{1}" name="License File" />
+		<help comments="When the trials are disabled in the application .config file this error will be returned for all trial licenses so they cannot be used." />
+	</data>
+	<data name="E_UnexpectedValidate" group="Validation">
+		<value>An unexpected error occurred while validating.</value>
+	</data>
+	<data name="E_ValidationOverflow" group="Validation">
+		<value>Too many pending delayed validations.</value>
+		<help comments="Too many license validation requests have been submitted simultaneously and there are too many pending delayed validation requests." />
+	</data>
+	<data name="E_WebImpersonationNotAllowed" group="Validation">
+		<value>Impersonation is not allowed until an administrator has signed into the application at least once.</value>
+	</data>
+	<data name="E_StoppedLooking" group="Validation">
+		<value>Stopped looking for additional licenses.</value>
+		<help comments="When a license with HardFailureOnFormShown set displays a form and is not valid then the license manager will stop looking for additional licenses." />
+	</data>
+	<data name="E_CouldNotGrant" group="Validation">
+		<value>Could not grant license.</value>
+	</data>
+	<data name="E_RSADenied" group="Validation">
+		<value>Access to the RSA algorithm has been blocked on this machine. Please contact your system administrator to enable access.</value>
+	</data>
+	<data name="E_CouldNotAcquireSecureStorage" group="Validation">
+		<value>Could not acquire secure storage.</value>
+	</data>
+	<data name="E_LimitRequiresVersion">
+		<value>The '{0}' limit requires runtime version '{1}' or later.</value>
+		<variable id="{0}" name="Limit" />
+		<variable id="{1}" name="Version" />
+	</data>
+
+	<data name="E_LimitFeatureRequiresVersion">
+		<value>The '{0}' feature of the '{1}' limit requires runtime version '{2}' or later.</value>
+		<variable id="{0}" name="Feature Name" />
+		<variable id="{1}" name="Limit" />
+		<variable id="{2}" name="Version" />
+	</data>
+
+
+	<!-- Runtime -->
+	<data name="E_AbortedByUser" group="Common">
+		<value>Action aborted by user.</value>
+	</data>
+	<data name="E_FormClosed" group="Common">
+		<value>The form was closed before the operation was completed.</value>
+	</data>
+	<data name="E_InvalidIdForLicense" group="Common">
+		<value>Cannot set reference with different license ids.</value>
+	</data>
+	<data name="E_InvalidRegistryKey" group="Common">
+		<value>'{0}' is not a valid registry key.</value>
+		<variable id="{0}" name="Key" />
+	</data>
+	<data name="E_InvalidUrl" group="Common">
+		<value>{0} is not a valid URL. URLs must be fully qualified including the scheme prefix such as http:// or asmres://.</value>
+		<variable id="{0}" name="Address" />
+	</data>
+	<data name="E_LicenseReadOnly" group="Common">
+		<value>The license cannot be modified at this time.</value>
+	</data>
+	<data name="E_PropertyAtLeast" group="Common">
+		<value>{0} must be at least {1}.</value>
+		<variable id="{0}" name="Property Name" />
+		<variable id="{1}" name="Minimum Value" />
+	</data>
+	<data name="E_PropertyCannotBeNull" group="Common">
+		<value>{0} cannot be null.</value>
+		<variable id="{0}" name="Property Name" />
+	</data>
+	<data name="E_PropertyNotSet" group="Common">
+		<value>The {0} property of the {1} object must be set.</value>
+		<variable id="{0}" name="Property Name" />
+		<variable id="{1}" name="Object Name" />
+		<help comments="Some properties must be set in a specific order. This error occurs when you attempt to assign a value to one property before a dependent property has been set." />
+	</data>
+	<data name="E_ReadOnlyObject" group="Common">
+		<value>The {0} object is read only and cannot be modified.</value>
+		<variable id="{0}" name="Type Name" />
+	</data>
+	<data name="E_ReadOnlyProperty" group="Common">
+		<value>The {0} property has already been set and cannot be modified.</value>
+		<variable id="{0}" name="Property Name" />
+		<help comments="Can occur when you try to set a property more than once that can not be modified after being assigned it's initial value." />
+	</data>
+	<data name="E_RequiresDeveloperMode">
+		<value>Developer mode must be enabled first.</value>
+	</data>
+	<data name="E_UnbalancedUpdate" group="Common">
+		<value>Unbalanced BeginUpdate/EndUpdate.</value>
+	</data>
+	<data name="E_UnknownVersionValue" group="Common">
+		<value>'{0}' is not a valid version number.</value>
+		<variable id="{0}" name="Version Value" />
+	</data>
+	<data name="E_CouldNotCreateEmail" group="Common">
+		<value>Could not create email. Try copying to the clipboard instead.</value>
+	</data>
+	<data name="E_LimitDoesNotBelongToLicense" group="Common">
+		<value>The limit does not belong to this license.</value>
+	</data>
+
+	<data name="E_SecureStorageTampered" group="Common">
+		<value>Detected tampering or unauthorized removal of secure storage.</value>
+	</data>
+	<data name="E_UnknownValidationState">
+		<value>'{0}' is not one of the known validation states for the '{1}' limit.</value>
+	</data>
+	<data name="E_FloatingNotSupported">
+		<value>Legacy floating limits are no longer supported.</value>
+	</data>
+
+
+	<!-- Server Errors -->
+
+	<data name="E_InvalidResponseFromServer" group="Server">
+		<value>Invalid response received from the server.</value>
+	</data>
+	<data name="E_ReferenceLimitMustBeInReferenceLicense" group="Server">
+		<value>Reference limit must be contained by the reference license.</value>
+		<help comments="When calling the server and passing a reference to a limit and a license, the limit must exist in the license." />
+	</data>
+	<data name="E_UnexpectedErrorFromServer" group="Server">
+		<value>Unexpected error while contacting {0}.</value>
+		<variable id="{0}" name="Server Address" />
+	</data>
+	<data name="E_SimulateOffline">
+		<value>DeployLX is simulating offline mode.</value>
+	</data>
+
+
+	<!-- Limit Errors -->
+	<data name="E_CannotChangeAssociatedLicense" group="Limit">
+		<value>The license object has already been set and cannot be changed.</value>
+	</data>
+	<data name="E_DelayAlreadyRegistered" group="Limit">
+		<value>Already registered for delayed validation.</value>
+		<helper>A delayed limit has attempted to register itself more than once for delayed validation.</helper>
+	</data>
+	<data name="E_DelayedWithoutListeners" group="Limit">
+		<value>No one listening for delayed validation events. You must subscribe to the SecureLicenseManager.DelayValidationFailed event before calling Validate.</value>
+	</data>
+	<data name="E_InvalidCustomGuiType" group="Limit">
+		<value>{0} is not a valid custom form type. Must derive either from SuperFormPanel or ICustomForm.</value>
+		<variable id="{0}" name="Type Name" />
+	</data>
+	<data name="E_LimitDoesNotExist" group="Limit">
+		<value>Could not find a limit named '{0}'.</value>
+		<variable id="{0}" name="Limit Name"/>
+		<help comments="When using custom limits you must use the assembly qualified name of the type and ensure that the assembly is installed in the GAC or in the application folder." />
+	</data>
+	<data name="E_3xCustomLimit">
+		<value>The {0} limit was compiled against runtime version 3.x and must be recompiled against the 4.x runtime.</value>
+		<variable id="{0}" name="LimitType"/>
+	</data>
+	<data name="E_PersistentDataMustBePrimitive" group="Limit">
+		<value>Persistent data must be one of the primitive types or a string value.</value>
+	</data>
+	<data name="E_TemplateVariableValueMismatch" group="Limit">
+		<value>The number of values and variables must be the same.</value>
+	</data>
+	<data name="E_InvalidPageId" group="Limit">
+		<value>The '{0}' limit does not support the page id '{1}' or it was not found.</value>
+		<variable id="{0}" name="Limit Name" />
+		<variable id="{1}" name="Page Id" />
+	</data>
+
+
+	<!-- Read/Write -->
+	<data name="E_CannotSaveEncryptedWithoutKey" group="Serialize">
+		<value>Cannot save a modified license without a key for encryption.</value>
+	</data>
+	<data name="E_CannotSaveLicenseInvalid" group="Serialize">
+		<value>License "{0}" is in an invalid state and cannot save.</value>
+		<variable id="{0}" name="License" />
+	</data>
+	<data name="E_CouldNotLoadLicenseFile" group="Serialize">
+		<value>Could not load license file.</value>
+	</data>
+	<data name="E_InvalidLicenseFile" group="Serialize">
+		<value>Invalid license file.</value>
+	</data>
+	<data name="E_InvalidVersion" group="Serialize">
+		<value>Invalid license format version. Expected 3.0, 4.0 or 5.0.</value>
+	</data>
+	<data name="E_LicenseStillEncrypted" group="Serialize">
+		<value>The license is still encrypted and the internal properties cannot be accessed. To decrypt you must validate the license.</value>
+		<help comments="The license must be decrypted before it can be modified. Use the DecryptLicense method of the LicenseKey class to make the license editable." />
+	</data>
+	<data name="E_LimitValueMismatch" group="Serialize">
+		<value>'{0}' does not match the expected value for the '{1}' attribute.</value>
+		<variable id="{0}" name="Value" />
+		<variable id="{1}" name="Attribute Name" />
+	</data>
+	<data name="E_MissingXmlAttribute" group="Serialize">
+		<value>The '{0}' attribute is missing on the &lt;{1}&gt; element.</value>
+		<variable id="{0}" name="Attribute Name" />
+		<variable id="{1}" name="Element Name" />
+	</data>
+	<data name="E_OldVersion" group="Serialize">
+		<value>The file at '{0}' uses an older license system.</value>
+		<variable id="{0}" name="Location" />
+		<help comments="This can occur when the application folder contains licenses from earlier versions of DeployLX or XHEO|Licensing." />
+	</data>
+	<data name="E_CouldNotCompleteSave">
+		<value>Could not completely save the license file.</value>
+	</data>
+	<data name="E_ISNotFipsCompliant">
+		<value>IsolatedStorage is not FIPS compliant and cannot be used to store shared license files.</value>
+	</data>
+	<data name="E_CannotOverwriteValidatedLicense">
+		<value>Saving the license returned from SecureLicenseManager.Validate will interfere with the internal state managed by DeployLX and cannot be saved directly.</value>
+	</data>
+	<data name="E_CannotSaveDisposedLicense">
+		<value>The license has been disposed, saving the license in this state may result in a corrupt license.</value>
+	</data>
+
+
+	<!-- Configuration -->
+	<data name="E_ConfigurationCannotUseAnd" group="Config">
+		<value>Cannot use '{0}' and '{1}' in the same &lt;{2}&gt; element.</value>
+		<variable id="{0}" name="Element1 Name"  />
+		<variable id="{1}" name="Element2 Name"  />
+		<variable id="{2}" name="Parent Element Name"  />
+	</data>
+	<data name="E_ConfigurationUnexpected" group="Config">
+		<value>Unexpected error while reading configuration file.</value>
+	</data>
+	<data name="E_InvalidConfigurationTag" group="Config">
+		<value>'{0}' is not one of the expected tags for the &lt;licensing&gt; configuration section.</value>
+		<variable id="{0}" name="Element Name"  />
+	</data>
+	<data name="E_InvalidConfigurationValue" group="Config">
+		<value>'{0}' is not one of the expected values for the {1} configuration property. Use one of the following: {2}.</value>
+		<variable id="{0}" name="Value" />
+		<variable id="{1}" name="Configuration Node" />
+		<variable id="{2}" name="Accepted Values" />
+	</data>
+	<data name="E_MissingConfigurationAttribute" group="Config">
+		<value>The '{0}' attribute is missing on the &lt;{1}&gt; element.</value>
+		<variable id="{0}" name="Attribte Name" />
+		<variable id="{1}" name="Element Name"  />
+	</data>
+	<data name="E_UnknownConfigurationAttribute" group="Config">
+		<value>The '{0}' attribute is not valid on the &lt;{1}&gt; element.</value>
+		<variable id="{0}" name="Attribte Name" />
+		<variable id="{1}" name="Element Name"  />
+	</data>
+
+
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Version Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_VersionLimitDescription" group="VersionMessage">
+		<value>Requires the protected assembly version to be within a range of allowed versions</value>
+	</data>
+	<data name="E_VersionMismatch" group="Version">
+		<value>Assembly version must be {0}.</value>
+		<variable id="{0}" name="Version" />
+	</data>
+	<data name="E_VersionMismatchRange" group="Version">
+		<value>Assembly must be between {0} and {1}.</value>
+		<variable id="{0}" name="Min Version" />
+		<variable id="{1}" name="Max Version" />
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- BETA Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_BetaLimitDescription" group="BetaMessage">
+		<value>Prevents the use of a BETA version past its expiration.</value>
+	</data>
+	<data name="E_BetaExpired" group="Beta">
+		<value>This beta version has expired.</value>
+	</data>
+	<data name="E_BetaExpiredUrl" group="Beta">
+		<value>This beta version has expired. Please visit {0} to download the latest version.</value>
+		<variable id="{0}" name="Update URL" />
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Feature Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_FeatureLimitDescription" group="FeatureMessage">
+		<value>Enables or disables named features.</value>
+	</data>
+	<data name="E_FeatureNotEnabled" group="Feature">
+		<value>The requested features have not been authorized.</value>
+	</data>
+	<data name="E_DontAddFeatureNames">
+		<value>Don't add or remove feature names. Instead assign the name to a specific index. Example: limit.Names[ FeatureFlags.Flag1 ] = "{0}"</value>
+		<vriable id="{0}" value="Name" />
+	</data>
+	<data name="E_FeatureNameCannotHaveSemiColons">
+		<value>Feature names may not include semi-colons.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Feature Filter Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_FeatureFilterLimitDescription" group="FeatureFilterMessage">
+		<value>Filters child limits based on selected features or serial number flags.</value>
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Design Time Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_DesigntimeLimitDescription" group="DesigntimeMessage">
+		<value>Prevents the software from being used outside a designtime environment.</value>
+	</data>
+	<data name="E_DesigntimeOnly" group="Designtime">
+		<value>License intended for design-time only.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Run Time Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_RuntimeLimitDescription" group="RuntimeMessage">
+		<value>Only allows the software to be used at runtime. Use in a designer is not allowed.</value>
+	</data>
+	<data name="E_RuntimeOnly" group="Runtime">
+		<value>License intended for run-time only.</value>
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Or Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_OrLimitDescription" group="OrMessage">
+		<value>Requires only one of the child limits to be valid.</value>
+	</data>
+	<data name="E_NoValidChildLimits" group="Or">
+		<value>No child limits could be validated.</value>
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Remote Desktop Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_RemoteDesktopLimitDescription" group="RemoteDesktopMessage">
+		<value>Does not allow licensed software to be accessed over a remote desktop session.</value>
+	</data>
+	<data name="E_CannotAccessWithRemoteDesktop" group="RemoteDesktop">
+		<value>Cannot access the software over remote desktop. Please log in locally.</value>
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Application Type Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_ApplicationTypeLimitDescription" group="ApplicationTypeMessage">
+		<value>Determines the type of application the software is running as..</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Time Server Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_TimeServerLimitDescription" group="TimeServerMessage">
+		<value>Connects to a remote SNTP time server and checks that the computer's clock is correct.</value>
+	</data>
+	<data name="E_ClockWrong" group="TimeServer">
+		<value>The machine's date or time is invalid.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Time Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_TimeLimitDescription" group="TimeMessage">
+		<value>Controls the amount of time the software can be used.</value>
+	</data>
+	<data name="M_TimeRemaining" group="TimeMessage">
+		<value>{0} of {1} remaining</value>
+		<variable id="{0}" name="Time Remaining" />
+		<variable id="{1}" name="Max Time" />
+		<help comments="Used for formatting the hints and information on the trial, activation and extension forms." />
+	</data>
+	<data name="E_TimeExpired" group="Time">
+		<value>The time limit has expired.</value>
+	</data>
+	<data name="E_TimeNotAbsolute" group="Time">
+		<value>The time limit type is not absolute and the date cannot be represented as a fixed value.</value>
+	</data>
+	<data name="E_InvalidClock" group="Time">
+		<value>The clock has been tampered with. Please restore the system clock to it's correct value.</value>
+	</data>
+	<data name="E_TestDateEarlierThanSystem" group="Time">
+		<value>The test date may not be set to a value earlier than the system clock.</value>
+	</data>
+	<data name="E_TimeNotValidated" group="Time">
+		<value>The TimeLimit has not been validated yet and the time remaining cannot be determined. Call Validate or Peek to check the time before requesting the time remaining.</value>
+	</data>
+	<data name="E_DateTooFarInFutureUseMaxTime64" group="Time">
+		<value>The date is too far in the future. Use MaxTime64 instead.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Use Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="E_CannotReduceUsage" group="Use">
+		<value>Cannot reduce usage count.</value>
+	</data>
+	<data name="E_UseLimitReached" group="Use">
+		<value>The usage limit for the license has been reached.</value>
+	</data>
+	<data name="M_UseLimitDescription" group="UseMessage">
+		<value>Restricts the number of times the software can be used.</value>
+	</data>
+	<data name="M_UsesRemaining" group="UseMessage">
+		<value>{0} of {1} uses remaining</value>
+		<variable id="{0}" name="Uses Remaining" />
+		<variable id="{1}" name="Max Uses" />
+		<help comments="Used for formatting the hints and information on the trial, activation and extension forms." />
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Trial Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_TrialLimitDescription" group="TrialMessage">
+		<value>Marks a license as a trial version and provides trial details and purchase information.</value>
+	</data>
+	<data name="E_TrialExpired" group="Trial">
+		<value>The trial period has expired.</value>
+	</data>
+	<data name="E_DidNotAcceptTrial" group="Trial">
+		<value>Did not accept terms of the trial.</value>
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- OS Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_OSLimitDescription" group="OSMessage">
+		<value>Allows the software to run only on specific operating systems.</value>
+	</data>
+	<data name="E_OSNotAllowed" group="OS">
+		<value>Cannot run on this operating system.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Extendable Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="E_CannotExtendAtServer" group="Extend">
+		<value>Cannot extend license at server</value>
+	</data>
+	<data name="E_InvalidExtensionCode" group="Extend">
+		<value>The extension code is invalid.</value>
+	</data>
+	<data name="E_ExpiredExtensionCode" group="Extend">
+		<value>The extension code has expired.</value>
+	</data>	
+
+	<data name="UI_Extend" group="ExtendUI">
+		<value>&amp;Extend</value>
+	</data>
+	<data name="UI_ExtendingOnlineNotice" group="ExtendUI">
+		<value>Extending Online...</value>
+	</data>
+	<data name="UI_ExtendLabel" group="ExtendUI">
+		<value>Extend</value>
+	</data>
+	<data name="UI_ExtendOnline" group="ExtendUI">
+		<value>Extend &amp;Online</value>
+	</data>
+	<data name="UI_Renew" group="ExtendUI">
+		<value>&amp;Renew</value>
+	 </data>
+	<data name="UI_RenewOnline" group="ExtendUI">
+		<value>Renew &amp;Online</value>
+	</data>
+	
+	<data name="UI_ExtendTitle" group="ExtendUI">
+		<value>Extend License Use Period</value>
+	</data>
+	<data name="UI_ExtensionExpired" group="ExtendUI">
+		<value>Your license has expired. To continue using {0} you must purchase a new license or renew your current license.</value>
+		<variable id="{0}" name="Product Name" />
+	</data>
+	<data name="UI_ExtensionPrompt" group="ExtendUI">
+		<value>Select "Extend Online" to request a license extension or enter the extension code obtained from customer service and select "Extend".</value>
+	</data>
+	<data name="UI_ExtensionPromptOnlineOnly" group="ExtendUI">
+		<value>Select "Extend Online" to request a license extension.</value>
+	</data>
+	<data name="UI_ExtensionPromptCodeOnly" group="ExtendUI">
+		<value>Enter the extension code obtained from customer service and select "Extend".</value>
+	</data>
+	<data name="UI_ExtensionSuccess" group="ExtendUI">
+		<value>Success. Select OK to continue.</value>
+	</data>
+	<data name="UI_ExtensionOnlineErrors" group="ExtendUI">
+		<value>There were errors during online extension. You can retry extending online or go back and try another method. If problems persist please contact customer service.</value>
+	</data>
+	<data name="UI_InvalidExtensionCode" group="ExtendUI">
+		<value>The code could not be used to extend the license. Please double check that the values have been entered correctly and that you have not used the code before.</value>
+	</data>
+	<data name="UI_InvalidExtensionCodeTitle" group="ExtendUI">
+		<value>Invalid Code</value>
+	</data>
+	<data name="UI_LimitCode" group="ExtendUI">
+		<value>Limit Code</value>
+	</data>
+	<data name="UI_MissingExtensionCode" group="ExtendUI">
+		<value>Please enter a valid extension code.</value>
+	</data>
+	<data name="UI_RenewLabel" group="ExtendUI">
+		<value>Renew</value>
+	</data>
+	<data name="UI_SubscriptionExpired" group="ExtendUI">
+		<value>Your subscription has expired. To continue using {0} you must purchase a new license or renew your subscription.</value>
+		<variable id="{0}" name="Product Name" />
+	</data>
+	<data name="UI_SubscriptionPrompt" group="ExtendUI">
+		<value>Select "Renew Online" to request a subscription renewal or enter the renewal code obtained from customer service and select "Renew".</value>
+	</data>
+	<data name="UI_SubscriptionPromptCodeOnly" group="ExtendUI">
+		<value>Enter the renewal code obtained from customer service and select "Renew".</value>
+	</data>
+	<data name="UI_SubscriptionPromptOnlineOnly" group="ExtendUI">
+		<value>Select "Renew Online" to request a license extension.</value>
+	</data>
+	<data name="UI_RenewingOnlineNotice" group="ExtendUI">
+		<value>Renewing Online...</value>
+	</data>
+	<data name="UI_RenewalOnlineErrors" group="ExtendUI">
+		<value>There were errors during online renewal. You can retry renewing online or go back and try another method. If problems persist please contact customer service.</value>
+	</data>
+
+	<data name="UI_SubscriptionPurchase" group="ExtendUI">
+		<value>Purchase Renewal</value>
+	</data>
+	<data name="UI_SubscriptionTitle" group="ExtendUI">
+		<value>Renew Subscription</value>
+	</data>
+	<data name="M_CopyExtension" group="ExtendMessage">
+		<value xml:space="preserve">Serial Number
+	{SerialNumber}
+	
+Limit Code
+	{LimitCode}</value>
+		<help comments="Default extension email template. Use UnlockEmailTemplate property to modify." />
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Domain Name Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_DomainLimitDescription" group="DomainNameMessage">
+		<value>Requires that web requests come from a specific group of domain names.</value>
+	</data>
+	<data name="E_InvalidDomain" group="DomainName">
+		<value>{0} is not one of the allowed domain names.</value>
+		<variable id="{0}" name="Domain Name" />
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Invalid Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_InvalidLimitDescription" group="InvalidMessage">
+		<value>Marks a license as always invalid.</value>
+	</data>
+	<data name="E_LicenseMarkedInvalid" group="Invalid">
+		<value>{0}</value>
+		<variable id="{0}" name="Message" />
+	</data>
+	<data name="M_DefaultInvalidLicenseMessage" group="InvalidMessage">
+		<value>The license has been explicitly marked as invalid.</value>
+	</data>
+
+
+
+
+		<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- IP Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_IPLimitDescription" group="IPMessage">
+		<value>Checks that the software is being used on a machine with one of a group of IP addresses.</value>
+	</data>
+	<data name="E_InvalidIPRange" group="IP">
+		<value>Invalid IP range.</value>
+	</data>
+	<data name="E_InvalidMachineIP" group="IP">
+		<value>This machine has not been assigned one of the valid IP addresses.</value>
+	</data>
+	<data name="E_InvalidRequestIP" group="IP">
+		<value>Requests on IP address {0} are not allowed.</value>
+		<variable id="{0}" name="Address" />
+	</data>
+	<data name="E_IPMustBeSameFamily" group="IP">
+		<value>IP addresses must be of the same family such as IPv4 or IPv6.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Application Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_ApplicationLimitDescription" group="ApplicationMessage">
+		<value>Controls the number of instances of the software running on the same machine.</value>
+	</data>
+	<data name="E_CouldNotCreateApplicationMonitor" group="Application">
+		<value>Could not create application monitor.</value>
+	</data>	
+	<data name="E_TooManyApplications" group="Application">
+		<value>The number of concurrent applications permitted has already been reached.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Reset Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_ResetLimitDescription" group="ResetMessage">
+		<value>Controls the number of instances of the software running on the same machine.</value>
+	</data>
+	<data name="E_TargetResetLimitDoesNotExist" group="Reset">
+		<value>The limit with id '{0}' could not be found in the license.</value>
+	</data>
+	<data name="E_TargetLimitIsNotResettable">
+		<value>The target limit with id '{0}' is not a resettable limit and cannot be reset.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Validation State Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_StateLimitDescription" group="StateMessage">
+		<value>Only validates it's child limits when it's parent State matches one of the desired validation states.</value>
+	</data>
+	<data name="M_StateSkipped" group="StateMessage">
+		<value>Skipped because the state '{0}' is not one of the desired states '{1}'.</value>
+	</data>
+	<data name="E_StateParentNotLimit" group="State">
+		<value>The State limit must be added as a child limit of another limit. It cannot be the immediate child of a license.</value>
+	</data>
+	<data name="E_LimitDoesNotSupportMultipleStates"  group="State">
+		<value>The parent {0} limit does not support multiple validation states.</value>
+	</data>
+	<data name="E_MissingStates" group="State">
+		<value>Missing desired validation states.</value>
+	</data>
+	<data name="E_UnkownState" group="State">
+		<value>The {0} limit does not support the {1} validation state.</value>
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Sessions Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_SessionsLimitDescription" group="SessionsMessage">
+		<value>Controls number of concurrent web sessions allowed.</value>
+	</data>
+	<data name="E_MissionContextOrSession" group="Sessions">
+		<value>Could not determine web session. Either sessions are disabled or the context has not been created.</value>
+	</data>
+	<data name="E_SessionTimeoutTooShort" group="Sessions">
+		<value>The session timeout period is too short. Must be at least {0}.</value>
+		<variable id="{0}" name="Min Time" />
+	</data>
+	<data name="E_TooManySessions" group="Sessions">
+		<value>The number of concurrent sessions permitted has been reached.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Service Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_ServiceLimitDescription" group="ServiceMessage">
+		<value>Restricts how the license can be used in a server or service process.</value>
+	</data>
+	<data name="E_CannotUseOnServerOrService" group="Service">
+		<value>Cannot be used in a server or service process.</value>
+	</data>
+	<data name="E_MustUseOnServerOrService" group="Service">
+		<value>Can only be used in the following service types: {0}.</value>
+		<variable id="{0}" name="Service Type List" />
+	</data>
+	<data name="E_ServerOrServiceMismatch" group="Service">
+		<value>Process does not match the permitted types.</value>
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Activation Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_ActivationLimitDescription" group="ActivationMessage">
+		<value>Locks the software to a specific hardware profile and prevents the software from being installed on multiple machines.</value>
+	</data>
+	<data name="M_CopyActivation" group="ActivationMessage">
+		<value xml:space="preserve">Serial Number
+	{SerialNumber}
+	
+Machine Code / Reference ID
+	{MachineCode} / {ReferenceId}</value>
+		<help comments="Default unlock email template. Use UnlockEmailTemplate property to modify." />
+	</data>
+	<data name="M_ActivationRequest" group="ActivationMessage">
+		<value>Activation Request</value>
+	</data>
+	<data name="M_ProfileAny" group="ActivationMessage">
+		<value>{0} (Any)</value>
+		<variable id="{0}" name="Reference Id" />
+	</data>
+	<data name="M_ProfileDesktop" group="ActivationMessage">
+		<value>{0} (Desktop)</value>
+		<variable id="{0}" name="Reference Id" />
+	</data>
+	<data name="M_ProfileLaptop" group="ActivationMessage">
+		<value>{0} (Laptop)</value>
+		<variable id="{0}" name="Reference Id" />
+	</data>
+	<data name="M_ProfilePhysical" group="ActivationMessage">
+		<value>{0} (Physical)</value>
+		<variable id="{0}" name="Reference Id" />
+	</data>
+	<data name="M_ProfileVirtual" group="ActivationMessage">
+		<value>{0} (Virtual)</value>
+		<variable id="{0}" name="Reference Id" />
+	</data>
+	
+	<data name="M_ProfileNone" group="ActivationMessage">
+		<value>{0} (None)</value>
+		<variable id="{0}" name="Reference Id" />
+	</data>
+	
+
+	<!-- Activation Errors -->
+	<data name="E_ActivationCodeInvalid" group="Activation">
+		<value>The activation code that you have entered is not valid. Please double check that you have entered the code correctly. If you continue to have difficulty please contact customer service.</value>
+	</data>
+	<data name="E_AdditionalProfileDataTooLong" group="Activation">
+		<value>Additional info is too long, must be 8 bytes or less.</value>
+	</data>
+	<data name="E_CannotActivateByKey" group="Activation">
+		<value>Cannot activate by key.</value>
+	</data>
+	<data name="E_CouldNotActivateAtServer" group="Activation">
+		<value>Could not activate license at server.</value>
+	</data>
+	<data name="E_CannotDeactivate" group="Activation">
+		<value>This license cannot be deactivated.</value>
+	</data>
+	<data name="E_CouldNotDeactivateAtServer" group="Activation">
+		<value>Could not deactivate license at server.</value>
+	</data>
+	<data name="E_CouldNotDeactivate" group="Activation">
+		<value>Could not deactivate the license.</value>
+	</data>
+	<data name="E_HardwareListInconsistent" group="Activation">
+		<value>The hardware list for each activation profile must contain the same hardware. To ignore a piece of hardware in a profile set its weight to 0 instead.</value>
+	</data>
+	<data name="E_MachineNotActivated" group="Activation">
+		<value>This machine has not been activated.</value>
+	</data>
+	<data name="E_MachineMismatch" group="Activation">
+		<value>This machine's hardware profile has changed significantly or the license has been de-activated and must be reactivated.</value>
+	</data>
+	<data name="E_MachineMismatchCheck" group="Activation">
+		<value>Profile '{0}' cannot be verified because this machine's hardware profile has changed significantly or the license has been de-activated. Attempting to re-activate. The old profile was {1}.</value>
+	</data>
+	<data name="E_FileMovedAndInvalidateOnMove" group="Activation">
+		<value>Profile '{0}' cannot be verified because the license file has been copied from another machine after it was activated or was modified on the current machine. Attempting to re-activate.</value>
+	</data>
+	<data name="E_ProfileWasDeactivated" group="Activation">
+		<value>Profile '{0}' cannot be verified because it was previously de-activated. New authorization is required. Attempting to re-activated.</value>
+	</data>
+	<data name="E_InvalidUnlockCodeForProfile" group="Activation">
+		<value>Profile '{0}' cannot be verified because the unlock code is invalid. Attempting to re-activated.</value>
+	</data>
+	<data name="E_NoServersDefined" group="Activation">
+		<value>No servers defined.</value>
+	</data>
+	<data name="E_TooMuchHardware" group="Activation">
+		<value>Cannot track more than 16 pieces of hardware.</value>
+	</data>
+	<data name="E_TooManyHardwareVariations" group="Activation">
+		<value>Too many instances of the {0} component to generate a valid hash.</value>
+	</data>
+	<data name="E_GracePeriodDefinedByState">
+		<value>The grace period for the activation limit is now defined by sub states and the State limit. Add a State limit that filters on the Unactivated state to define the grace period.</value>
+	</data>
+	
+
+
+	<!-- Activation Form -->
+	<data name="UI_Activate" group="ActivationUI">
+		<value>&amp;Activate</value>
+	</data>
+	<data name="UI_ActivateLater" group="ActivationUI">
+		<value>Activate &amp;Later</value>
+	</data>
+	<data name="UI_ActivateManually" group="ActivationUI">
+		<value> Activate by &amp;Entering a Code</value>
+	</data>
+	<data name="UI_ActivateManuallyNotice" group="ActivationUI">
+		<value>Please contact customer service and provide them with the information displayed below.</value>
+	</data>
+	<data name="UI_ActivateManuallyTitle" group="ActivationUI">
+		<value>Activate Offline</value>
+	</data>
+	<data name="UI_ActivateOnline" group="ActivationUI">
+		<value> &amp;Activate Over the Internet</value>
+	</data>
+	<data name="UI_ActivateOnlineTitle" group="ActivationUI">
+		<value>Activate Over the Internet</value>
+	</data>
+	<data name="UI_ActivateTitle" group="ActivationUI">
+		<value>Activate {0}</value>
+		<variable id="{0}" name="Product Name"/>
+	</data>
+	<data name="UI_ActivatingOnlineNotice" group="ActivationUI">
+		<value>Activating over the Internet. Please be patient...</value>
+	</data>
+	<data name="UI_ActivationCode" group="ActivationUI">
+		<value>Activation &amp;Code</value>
+	</data>
+	<data name="UI_MachineNickname" group="ActivationUI">
+		<value>Machine &amp;Nickname</value>
+	</data>
+	
+	<data name="UI_ActivationOnlineErrors" group="ActivationUI">
+		<value>Errors while activating. Retry or go back and try another method. If problems persist please contact customer service.</value>
+	</data>
+	<data name="UI_ActivationSuccess" group="ActivationUI">
+		<value>Success. Select OK to continue.</value>
+	</data>
+	<data name="UI_ActivationNotice" group="ActivationUI">
+		<value>To continue you must activate which verifies that you are using a fully licensed version of the software.</value>
+		<variable id="{0}" name="Product Name"/>
+	</data>
+	<data name="UI_MachineCode" group="ActivationUI">
+		<value>Machine Code</value>
+	</data>
+	<data name="UI_ReactivationNotice" group="ActivationUI">
+		<value>You are being asked to reactivate because either the hardware profile on your machine has changed significantly or you have de-activated your license for installation on a new machine.</value>
+	</data>
+	<data name="UI_SelectActivationProfile"	 group="ActivationUI">
+		<value>Your license supports multiple machine profiles,  please select the profile you would like to activate.</value>
+	</data>
+	<data name="UI_TellMeMoreActivation" group="ActivationUI">
+		<value>More about Activation</value>
+	</data>
+	<data name="UI_WebActivationHeaderNotice" group="ActivationUI">
+		<value>Activation is required to use {0}</value>
+		<variable id="{0}" name="Product Name"/>
+	</data>
+	<data name="UI_EnterNewSerialActivation" group="ActivationUI">
+		<value>Try a different serial number</value>
+	</data>
+	<data name="UI_ActivationNicknameNote" group="ActivationUI">
+		<value>Name this machine to help remember where you've installed the software.</value>	
+	</data>
+	<data name="UI_ActivationMachineWarning" group="ActivationUI">
+		<value>WARNING: Activating your license on this machine may prevent you from installing the software on additional machines. Please consult your licensing agreement for license usage and restrictions before continuing.</value>
+	</data>
+
+
+	<!-- Deactivation Form-->
+	<data name="UI_Deactivate" group="DeactivationUI">
+		<value>&amp;Deactivate</value>
+	</data>
+	<data name="UI_DeactivateTitle" group="DeactivationUI">
+		<value>Deactivate Your Software</value>
+	</data>
+	<data name="UI_DeactivatingNotice" group="DeactivationUI">
+		<value>Deactivating. Please be patient...</value>
+	</data>
+	<data name="UI_DeactivationCompleteNotice" group="DeactivationUI">
+		<value xml:space="preserve">Your license has been de-activated. Keep a copy of this confirmation code code as proof of deactivation.</value>
+	</data>
+	<data name="UI_DeactivationConfirmation" group="DeactivationUI">
+		<value>Are you sure you want to deactivate {0} from this machine? You will no longer be able to use it on this machine.</value>
+		<variable id="{0}" name="Product Name"/>
+	</data>
+	<data name="UI_DeactivationFailedNotice" group="DeactivationUI">
+		<value>Deactivation was not successful. You may not be authorized to use the software on another machine. Please contact customer service immediately.</value>
+	</data>
+	<data name="UI_DeactivationMachineWarning" group="DeactivationUI">
+		<value>WARNING: Deactivating your license from this machine may prevent you from re-installing the software on this machine. Please consult your licensing agreement for license usage and restrictions before continuing.</value>
+	</data>
+	<data name="UI_DeactivationNotice" group="DeactivationUI">
+		<value>Deactivating will permit you to install {0} on a different machine. You do not need to de-activate to re-install on the same machine if you have not changed any of the hardware. Once deactivated you will no longer be able to use {0} on this machine.</value>
+		<variable id="{0}" name="Product Name"/>
+	</data>
+	<data name="UI_DeactivationServerNotice" group="DeactivationUI">
+		<value>During deactivation an attempt will be made to notify the license server so you can automatically activate on the new machine.</value>
+	</data>
+	<data name="UI_PossibleErrorsDeactivation" group="DeactivationUI">
+		<value>There may have been errors during deactivation. Please contact customer service immediately.</value>
+	</data>
+
+	<!-- About Activation Form -->
+	<data name="UI_AboutActivationTitle" group="ActivationAboutUI">
+		<value>About Software Activation</value>
+	</data>
+	<data name="UI_AboutActivationSummary" group="ActivationAboutUI">
+		<value>Activation verifies that your copy of {0} is genuine and that it has not been used on more computers than the license agreement accompanying the software permits. In this way, activation helps reduce software piracy allowing us to maintain lower prices and superior service. </value>
+		<variable id="{0}" name="Product Name" />
+	</data>
+	<data name="UI_AboutActivationRequiredTitle" group="ActivationAboutUI">
+		<value>Activation Is Required</value>
+	</data>
+	<data name="UI_AboutActivationRequiredSummary" group="ActivationAboutUI">
+		<value>{0}. Some features may be disabled or reduced until you complete activation.</value>
+		<variable id="{0}" name="Grace Period Explanation" />
+	</data>
+	<data name="UI_AboutActivationRequiredSimpleSummary" group="ActivationAboutUI">
+		<value>Some features may be disabled or reduced until you complete activation.</value>
+		<variable id="{0}" name="Grace Period Explanation" />
+	</data>
+	<data name="UI_AboutActivationTelephoneEmailOnline" group="ActivationAboutUI">
+		<value> online or by telephone or email</value>
+	</data>
+	<data name="UI_AboutActivationTelephoneOnline" group="ActivationAboutUI">
+		<value> online or by telephone</value>
+	</data>
+	<data name="UI_AboutActivationEmailOnline" group="ActivationAboutUI">
+		<value> online or by email</value>
+	</data>
+	<data name="UI_AboutActivationOnline" group="ActivationAboutUI">
+		<value> online</value>
+	</data>
+	<data name="UI_AboutActivationTelephoneEmail" group="ActivationAboutUI">
+		<value> by telephone or email</value>
+	</data>
+	<data name="UI_AboutActivationTelephone" group="ActivationAboutUI">
+		<value> by telephone</value>
+	</data>
+	<data name="UI_AboutActivationEmail" group="ActivationAboutUI">
+		<value> by email</value>
+	</data>
+	<data name="UI_AboutActivationImmediately" group="ActivationAboutUI">
+		<value>You must activate to continue</value>
+		<variable id="{0}" name="Product Name" />
+	</data>
+	<data name="UI_AboutActivationToActivate" group="ActivationAboutUI">
+		<value> to activate</value>
+		<variable id="{0}" name="Product Name" />
+	</data>
+	<data name="UI_AboutActivationPrivacy" group="ActivationAboutUI">
+		<value>No personal information is gathered during activation.</value>
+	</data>
+	<data name="UI_AboutActivationReinstall" group="ActivationAboutUI">
+		<value>You may reinstall the software or your operating system without special authorization.</value>
+	</data>
+	<data name="UI_AboutActivationHardware" group="ActivationAboutUI">
+		<value>Minor hardware changes will not prevent you from using the software.</value>
+	</data>
+	<data name="UI_AboutActivationHardwareMajor" group="ActivationAboutUI">
+		<value>Changes to major hardware components including the machine's motherboard, CPU, hard drive or network card may require additional authorization.</value>
+	</data>
+	<data name="UI_AboutActivationDeactivate" group="ActivationAboutUI">
+		<value>You may uninstall the software from this machine to install it on a different machine according to the restrictions outlined in your license agreement.</value>
+	</data>
+	
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Publisher Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_PublisherLimitDescription" group="PublisherMessage">
+		<value>Limits the use of a license to assemblies signed by a specific publisher.</value>
+	</data>
+	<data name="E_InvalidPublisher" group="Publisher">
+		<value>License can only be used by assemblies signed by {0}.</value>
+		<variable id="{0}" name="Publisher Name" />
+	</data>
+	<data name="E_PublisherWithToken" group="Publisher">
+		<value>the publisher with a public key token of {0}</value>
+		<variable id="{0}" name="Publisher Key Token" />
+	</data>
+
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- HTML Branded Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_HtmlBrandedLimitDescription" group="HtmlMessage">
+		<value>Brands all ASP.NET requests with the specified HTML.</value>
+	</data>
+	<data name="E_CouldNotGetPage" group="Html">
+		<value>Could not get reference to Page object. Make sure the call to Validate occurs after the Page has been constructed or from the constructor of the Page object itself.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- License Server Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_LicenseServerLimitDescription" group="LicenseServerMessage">
+		<value>Connects to a remote server for validation.</value>
+	</data>
+	<data name="E_CannotValidateAtServer" group="LicenseServer">
+		<value>Cannot validate license at server.</value>
+	</data>
+	<data name="E_ModifiedOrUnlocked" group="LicenseServer">
+		<value>License was used to unlock another license or was modified by the server.</value>
+	</data>
+	<data name="E_CannotRenewAtServer" group="LicenseServer">
+		<value>Cannot renew license at server.</value>
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Script Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_ScriptLimitDescription" group="ScriptMessage">
+		<value>Executes custom code during validation.</value>
+	</data>
+	<data name="E_InvalidScriptLanguage" group="Script">
+		<value>Invalid script language, must be either C# or Visual Basic.</value>
+	</data>
+	<data name="E_CouldNotCompileScript" group="Script">
+		<value>Could not dynamically  compile script.</value>
+	</data>
+	<data name="E_InvalidInvokeSignature" group="Script">
+		<value>Invalid invoke signature, must contain assembly qualified name or the assembly, type or method does not exist.</value>
+	</data>
+	<data name="E_MustDefineCustomGui" group="Script">
+		<value>Must set the CustomForm property.</value>
+		<help comments="To use the UI support for the script limit you must provide a class to use as the form." />
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Upgrade Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_UpgradeLimitDescription" group="UpgradeMessage">
+		<value>Checks for the existence of a valid serial number from an older version.</value>
+	</data>
+	<data name="E_NoUpgradeSerialNumber" group="Upgrade">
+		<value>Upgrade serial number is missing or invalid.</value>
+	</data>
+	
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Compile Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_CompileLimitDescription" group="CompileMessage">
+		<value>Checks that the user has a license to compile against the given assembly.</value>
+	</data>
+	<data name="E_LicxRequired" group="Compile">
+		<value>Assemblies that reference the {0} assembly must embed a file named license.licx containing the text '{1}'.</value>
+		<variable id="{0}" name="Assembly" />
+		<variable id="{1}" name="Reference" />
+	</data>
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Registration Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_RegistrationLimitDescription" group="RegistrationMessage">
+		<value>Gathers registration information and possibly unlocks a license with a serial number.</value>
+	</data>
+	
+	<data name="E_NotRegistered" group="Registration">
+		<value>No licenses were registered.</value>
+	</data>
+	<data name="E_CannotCreateCustomControl" group="Registration">
+		<value>Could not create custom control {0}.</value>
+		<variable id="{0}" name="Class Name" />
+	</data>
+	<data name="E_CouldNotRegister" group="Registration">
+		<value>Could not register license.</value>
+	</data>
+	<data name="E_CouldNotRegisterWithServer" group="Registration">
+		<value>Could not register with the server.</value>
+	</data>
+	<data name="E_InvalidSerialOrFailure" group="Registration">
+		<value>The serial number could not be used to unlock the software. Please try again.</value>
+	</data>
+
+	<!-- Registration Form	-->
+	<data name="UI_RegistrationTitle" group="RegistrationUI">
+		<value>Register {0}</value>
+	</data>
+	<data name="UI_RegistrationNotice" group="RegistrationUI">
+		<value>Please register your copy of {0}. </value>
+		<variable id="{0}" name="Product Name" />
+	</data>
+	<data name="UI_RegistrationMandatoryNotice" group="RegistrationUI">
+		<value>To continue you must register your copy of {0}. </value>
+		<variable id="{0}" name="Product Name" />
+	</data>
+	<data name="UI_RegistrationOrTrialNotice" group="RegistrationUI">
+		<value>You must register to unlock the full capabilities of {0}, or continue in trial mode to evaluate the software.</value>
+		<variable id="{0}" name="Product Name" />
+	</data>
+	<data name="UI_RegistrationServerNotice" group="RegistrationUI">
+		<value>The license server will be notified of your registration.</value>
+	</data>
+	<data name="UI_RegistrationServerRequiredNotice" group="RegistrationUI">
+		<value>The license server will be notified of your registration. An active connection is required.</value>
+	</data>
+	<data name="UI_RegisterLater" group="RegistrationUI">
+		<value>Register &amp;Later</value>
+	</data>
+	<data name="UI_DontRegister" group="RegistrationUI">
+		<value>&amp;Don't Register</value>
+	</data>
+	<data name="UI_FieldRequiredNotice" group="RegistrationUI">
+		<value>'{0}' is required. Please enter a valid value.</value>
+		<variable id="{0}" name="Field Name" />
+	</data>
+	<data name="UI_ActivateAutoOnline" group="RegistrationUI">
+		<value>Activate automatically when I am online.</value>
+	</data>
+	<data name="UI_UpgradeTitle" group="RegistrationUI">
+		<value>Previous Version Required</value>
+	</data>
+	<data name="UI_UpgradeNotice" group="RegistrationUI">
+		<value>You have entered an upgrade serial number. To complete registration you must provide the serial number of a previous version.</value>
+	</data>
+	<data name="UI_PreviousSerialNumber" group="RegistrationUI">
+		<value>Previous Serial Number</value>
+	</data>
+	<data name="UI_RegistrationSuccess" group="RegistrationUI">
+		<value>Success. Select OK to continue.</value>
+	</data>
+	<data name="UI_RegisteringOnlineNotice" group="RegistrationUI">
+		<value>Registering online. Please be patient...</value>
+	</data>
+	<data name="UI_RegistrationOnlineErrors" group="RegistrationUI">
+		<value>Errors while registering with server. Retry, or if problems persist please contact customer service.</value>
+	</data>
+
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Splash Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_SplashLimitDescription" group="SplashMessage">
+		<value>Shows a splash screen during license validation.</value>
+	</data>
+	<data name="E_CouldNotGetResource" group="Splash">
+		<value>Could not find resource {0}.</value>
+		<variable id="{0}" name="Splash Image Address" />
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Type Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_TypeLimitDescription" group="TypeMessage">
+		<value>Enables or disables use of protected runtime Types.</value>
+	</data>
+	<data name="E_TypeNotEnabled" group="Type">
+		<value>The requested type has not been authorized.</value>
+	</data>
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Online Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_OnlineLimitDescription" group="OnlineMessage">
+		<value>Optionally validates child limits when the machine has an active internet connection.</value>
+	</data>
+	
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Virtual Machine Limit -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<data name="M_VirtualMachineLimitDescription" group="VirtualMessage">
+		<value>Optionally validates child limits when the machine is virtualized.</value>
+	</data>
+	
+
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- General UI Strings -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+
+	<!-- Common -->
+	<data name="UI_OK" group="SharedUI">
+		<value>O&amp;K</value>
+	</data>
+	<data name="UI_Abort" group="SharedUI">
+		<value>&amp;Abort</value>
+	</data>
+	<data name="UI_Cancel" group="SharedUI">
+		<value>&amp;Cancel</value>
+	</data>
+	<data name="UI_Close" group="SharedUI">
+		<value>&amp;Close</value>
+	</data>
+	<data name="UI_Details" group="SharedUI">
+		<value>&amp;Details...</value>
+	</data>
+	<data name="UI_DetailsCaption" group="SharedUI">
+		<value>Details</value>
+	</data>
+	<data name="UI_ErrorCaption" group="SharedUI">
+		<value>Error</value>
+	</data>
+	<data name="UI_Ignore" group="SharedUI">
+		<value>&amp;Ignore</value>
+	</data>
+	<data name="UI_No" group="SharedUI">
+		<value>&amp;No</value>
+	</data>
+	<data name="UI_Retry" group="SharedUI">
+		<value>&amp;Retry</value>
+	</data>
+	<data name="UI_Yes" group="SharedUI">
+		<value>&amp;Yes</value>
+	</data>
+	<data name="UI_Stop" group="SharedUI">
+		<value>&amp;Stop</value>
+	</data>
+	<data name="UI_GoBack" group="SharedUI">
+		<value>Go &amp;Back</value>
+	</data>
+	<data name="UI_MessageBoxExceptionMessage" group="SharedUI">
+		<value>
+			{0}
+			Additional Information:
+
+			{1}
+		</value>
+		<variable id="{0}" name="Error Message" />
+		<variable id="{1}" name="Details Message" />
+	</data>
+	<data name="UI_CopyrightWarning" group="SharedUI">
+		<value>WARNING: This computer program is protected by copyright law and international treaties. Circumvention of any copy protection scheme may result in severe civil and criminal penalties and will be prosecuted to the maximum extent possible under the law.</value>
+	</data>
+	<data name="UI_Version" group="SharedUI">
+		<value>Version</value>
+	</data>
+	<data name="UI_Username" group="SharedUI">
+		<value>&amp;Username</value>
+	</data>
+	<data name="UI_Password" group="SharedUI">
+		<value>&amp;Password</value>
+	</data>
+	<data name="UI_Credentials" group="SharedUI">
+		<value>Credentials</value>
+	</data>
+	<data name="UI_Authorize" group="SharedUI">
+		<value>&amp;Authorize</value>
+	</data>
+	<data name="UI_CopyToEmail" group="SharedUI">
+		<value>Copy to &amp;Email</value>
+	</data>
+	<data name="UI_CopyToClipboard" group="SharedUI">
+		<value>Copy to Cli&amp;pboard</value>
+	</data>
+	<data name="UI_LicenseAgreement" group="SharedUI">
+		<value>License Agreement</value>
+	</data>
+	<data name="UI_BuyNow" group="SharedUI">
+		<value>&amp;Buy Now</value>
+	</data>
+	<data name="UI_Try" group="SharedUI">
+		<value>&amp;Try</value>
+	</data>
+	<data name="UI_MoreInfo" group="SharedUI">
+		<value>More &amp;Info</value>
+	</data>
+	<data name="UI_Register" group="SharedUI">
+		<value>&amp;Register</value>
+	</data>
+	<data name="UI_MachineProfile" >
+		<value>&amp;Machine ID</value>
+	</data>
+	<data name="UI_SerialNumber" group="SharedUI">
+		<value>Serial Number</value>
+	</data>	
+	<data name="UI_ValidationNoticeTitle" group="SharedUI">
+		<value>Validation Notice</value>
+	</data>
+	<data name="UI_FieldRequired" group="SharedUI">
+		<value>Indicates that you must fill in the field.</value>
+	</data>
+	<data name="UI_Name" group="SharedUI">
+		<value>&amp;Name</value>
+	</data>
+	<data name="UI_Organization" group="SharedUI">
+		<value>&amp;Organization</value>
+	</data>
+	<data name="UI_PrivacyPolicy" group="SharedUI">
+		<value>Privacy Policy</value>
+	</data>
+	<data name="UI_EnterExtensionCode" group="SharedUI">
+		<value>&amp;Extend...</value>
+	</data>
+	<data name="UI_ErrorsConnectingToServer" group="SharedUI">
+		<value>Errors connecting to the server.</value>
+	</data>
+	<data name="UI_DetailsCopied" group="SharedUI">
+		<value>The details have been copied to the clipboard. You can now paste them into an email or into your favorite word processing software for printing.</value>
+	</data>
+	<data name="UI_DetailsCopiedTitle" group="SharedUI">
+		<value>Details Copied</value>
+	</data>
+	<data name="UI_SelectLicenseFile" group="SharedUI">
+		<value>Select License File</value>
+	</data>
+	<data name="UI_LicenseFiles" group="SharedUI">
+		<value>License Files</value>
+	</data>
+	<data name="UI_LicenseFileExists" group="SharedUI">
+		<value>A license with that name already exists on the machine. Would you like to overwrite the existing license?</value>
+	</data>
+
+	<!-- Super Form -->
+	<data name="UI_SupportInfo" group="SharedUI">
+		<value>Get Help</value>
+	</data>
+	<data name="UI_EmailSupport" group="SharedUI">
+		<value>Email Customer Service</value>
+	</data>
+	<data name="UI_VisitSupportWebsite" group="SharedUI">
+		<value>Customer Service Website</value>
+	</data>
+
+	<!-- Proxy Form -->
+	<data name="UI_ProxyFormTitle" group="ProxyUI">
+		<value>Internet Proxy Configuration</value>
+	</data>
+	<data name="UI_ProxyServerAddress" group="ProxyUI">
+		<value>Proxy Server Address</value>
+	</data>
+	<data name="UI_ProxyHelpNote" group="ProxyUI">
+		<value>Contact your network administrator for help with these values.</value>
+	</data>
+	<data name="UI_ProxyNotice" group="ErrorUI">
+		<value>Please enter your proxy information to connect to the Internet.</value>
+	</data>
+
+
+	<!-- Admin Form -->
+	<data name="UI_AdminFormTitle" group="AdminUI">
+		<value>Admin Required</value>
+	</data>
+	<data name="UI_AdminRequiredNotice" group="AdminUI">
+		<value>To use {0} an Administrator must grant permission to run the software at least once.</value>
+		<variable id="{0}" name="Product Name" />
+	</data>
+	<data name="UI_AdminVistaNotice" group="AdminUI">
+		<value>To grant permissions to the application, select the Authorize button and ask an Administrator to enter their login information.</value>
+	</data>
+
+	<data name="UI_AdminVistaNotice11" group="AdminUI">
+		<value>To run the application as an administrator in Windows Vista right-click on the application icon and selecting "Run as administrator".</value>
+	</data>
+	<data name="UI_Admin2000Notice11" group="AdminUI">
+		<value>To run the application as an administrator in Windows 2000 hold the shift key while right-clicking on the application icon and selecting "Run as".</value>
+	</data>
+
+	<data name="UI_CouldNotAuthorizeLicense" group="AdminUI">
+		<value>Could not authorize license usage. Please try again. If problems persist please contact customer service.</value>
+	</data>
+
+	
+	<data name="UI_PleaseEnterValidCredentials" group="AdminUI">
+		<value>Please enter both a username and password.</value>
+	</data>
+	<data name="UI_UserIsNotAdmin" group="AdminUI">
+		<value>'{0}' is not an administrator. Please enter the credentials for an administrator.</value>
+		<variable id="{0}" name="Username" />
+	</data>
+	<data name="UI_InvalidCredentials" group="AdminUI">
+		<value>Could not validate those credentials. Please try again.</value>
+	</data>
+
+
+	<!-- Error Report -->
+
+	<data name="UI_LicenseNotFoundTitle" group="ErrorUI">
+		<value>License Not Found</value>
+	</data>
+	<data name="UI_LicenseNotFoundSubTitle" group="ErrorUI">
+		<value>There were problems trying to obtain a valid license.</value>
+	</data>
+	<data name="UI_ProblemContectingToServerProxy" group="ErrorUI">
+		<value>There was a problem connecting to your proxy server. Please try again.</value>
+	</data>
+	<data name="UI_ErrorReport" group="ErrorUI">
+		<value>Error Report</value>
+	</data>
+	<data name="UI_CopyDetails" group="ErrorUI">
+		<value>&amp;Copy Details</value>
+	</data>
+	<data name="UI_ShowDetails" group="ErrorUI">
+		<value>Show &amp;Details</value>
+	</data>
+	<data name="UI_DetailsReport" group="ErrorUI">
+		<value>License Failure Report</value>
+	</data>
+	<data name="UI_Continue" group="ErrorUI">
+		<value>&amp;Continue</value>
+	</data>
+	<data name="UI_DetailsTab" group="ErrorUI">
+		<value>Details</value>
+	</data>
+	<data name="UI_AssembliesTab" group="ErrorUI">
+		<value>Assemblies</value>
+	</data>
+	<data name="UI_SystemInfoTab" group="ErrorUI">
+		<value>System Info</value>
+	</data>
+	<data name="UI_NextSteps" group="ErrorUI">
+		<value>Next Steps</value>
+	</data>
+	<data name="UI_CopyDetailsToClipboard" group="ErrorUI">
+		<value>Copy details to clipboard</value>
+	</data>
+	<data name="UI_GenerateDetailedEmailReport" group="ErrorUI">
+		<value>Generate detailed email report</value>
+	</data>
+
+
+
+	<!-- ////////////////////////////////////////////////////////////////// -->
+	<!-- Message Resources -->
+	<!-- ////////////////////////////////////////////////////////////////// -->
+
+	<data name="M_NoLicenseWebsite" group="SharedMessage">
+		<value>Website = {0}</value>
+		<variable id="{0}" name="Customer Service Website" />
+		<help comments="Used when generating an error report when a license cannot be found." />
+	</data>
+	<data name="M_NoLicenseEmail" group="SharedMessage">
+		<value>Email = {0}</value>
+		<variable id="{0}" name="Customer Service Email" />
+		<help comments="Used when generating an error report when a license cannot be found." />
+	</data>
+	<data name="M_NoLicensePhone" group="SharedMessage">
+		<value>Phone = {0}</value>
+		<variable id="{0}" name="Customer Service Phone Number" />
+		<help comments="Used when generating an error report when a license cannot be found." />
+	</data>
+	<data name="M_NoLicenseReason" group="SharedMessage">
+		<value>Validation Details:</value>
+		<help comments="Used when generating an error report when a license cannot be found." />
+	</data>
+	<data name="M_NoLicenseSummary" group="SharedMessage">
+		<value>Probable Cause:</value>
+		<help comments="Used when generating an error report when a license cannot be found." />
+	</data>
+
+	<!-- Diagnostic Report Fields -->
+	<data name="M_DynamicAssembly" group="SharedMessage">
+		<value>Dynamic Assembly</value>
+	</data>
+	<data name="M_Platform" group="SharedMessage">
+		<value>Platform</value>
+	</data>
+	<data name="M_EntryAssembly">
+		<value>Entry Assembly</value>
+	</data>
+	<data name="M_BaseDirectory">
+		<value>Base Directory</value>
+	</data>
+	<data name="M_OSVersion" group="SharedMessage">
+		<value>OS Version</value>
+	</data>
+	<data name="M_CLRVersion" group="SharedMessage">
+		<value>CLR Version</value>
+	</data>
+	<data name="M_ProcessBitness" group="SharedMessage">
+		<value>Process Bitness</value>
+	</data>
+	<data name="M_VirtualMachine" group="SharedMessage">
+		<value>Virtual Machine</value>
+	</data>
+	<data name="M_Culture" group="SharedMessage">
+		<value>Culture</value>
+	</data>
+	<data name="M_Encoding" group="SharedMessage">
+		<value>Encoding</value>
+	</data>
+	<data name="M_IISAvailable" group="SharedMessage">
+		<value>IIS Available</value>
+	</data>
+	<data name="M_Timestamp" group="SharedMessage">
+		<value>Timestamp</value>
+	</data>
+	<data name="M_LicenseFailureDetails" group="SharedMessage">
+		<value>License Failure Details</value>
+	</data>
+	<data name="M_SystemInfo" group="SharedMessage">
+		<value>System Info</value>
+	</data>
+	<data name="M_Assemblies" group="SharedMessage">
+		<value>Assemblies</value>
+	</data>
+	<data name="M_StackTrace" group="SharedMessage">
+		<value>Stack Trace</value>
+	</data>
+	<data name="M_DetailsHeader" group="SharedMessage">
+		<value>DETAILS</value>
+	</data>
+	<data name="M_FailureReport" group="SharedMessage">
+		<value>Failure Report</value>
+	</data>
+	<data name="M_MachineCode" group="SharedMessage">
+		<value>Machine Code</value>
+	</data>
+	<data name="M_Seconds" group="SharedMessage">
+		<value>seconds</value>
+	</data>
+	<data name="M_Minutes" group="SharedMessage">
+		<value>minutes</value>
+	</data>
+	<data name="M_Hours" group="SharedMessage">
+		<value>hours</value>
+	</data>
+	<data name="M_Days" group="SharedMessage">
+		<value>days</value>
+	</data>
+	<data name="M_Second" group="SharedMessage">
+		<value>second</value>
+	</data>
+	<data name="M_Minute" group="SharedMessage">
+		<value>minute</value>
+	</data>
+	<data name="M_Hour" group="SharedMessage">
+		<value>hour</value>
+	</data>
+	<data name="M_Day" group="SharedMessage">
+		<value>day</value>
+	</data>
+	<data name="M_And" group="SharedMessage">
+		<value>and</value>
+	</data>
+	<data name="M_Or" group="SharedMessage">
+		<value>or</value>
+	</data>
+
+	<data name="M_TheManufacturer" group="SharedMessage">
+		<value>the manufacturer</value>
+	</data>
+	<data name="M_NA" group="SharedMessage">
+		<value>N/A</value>
+	</data>
+	<data name="M_CurrentAssembly" group="SharedMessage">
+		<value>the current assembly</value>
+	</data>
+	<data name="M_SuggestionCache" group="SharedMessage">
+		<value>the suggestion cache</value>
+	</data>
+	<data name="M_ExceptionPrompt" group="SharedMessage">
+		<value>Exception: </value>
+	</data>
+
+	<data name="M_UsingDeveloperMode">
+		<value>DeployLX Licensing Developer Mode is enabled. Be sure to disable this feature before releasing your assembly.</value>
+	</data>
+
+	<data name="M_RestoredSecureStorage">
+		<value>Restored secure storage.</value>
+	</data>
+
+
+</root>
