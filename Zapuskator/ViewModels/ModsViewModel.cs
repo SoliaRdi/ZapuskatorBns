@@ -194,7 +194,7 @@ namespace Zapuskator.ViewModels
             }
         }
 
-        public async void UnpackLoading()
+        public async Task UnpackLoading()
         {
             string _LoadingPath = LoadingPath;
             await Task.Factory.StartNew(() =>
@@ -245,21 +245,21 @@ namespace Zapuskator.ViewModels
             });
         }
 
-        public void RepackLoading()
+        public async void RepackLoading()
         {
             string _LoadingImgFolder = LoadingImgFolder;
 
-            Task.Factory.StartNew(() =>
+            await Task.Factory.StartNew(async () =>
             {
                 try
                 {
                     if (!Directory.Exists(Path.Combine("bnsfiles", "Loading")))
-                       UnpackLoading();
+                       await UnpackLoading();
                     var d = new DirectoryInfo(Path.Combine("bnsfiles", "Loading"));
                     var files = d.GetFiles();
                     if (files.Length < 10)
                     {
-                        UnpackLoading();
+                        await UnpackLoading();
                         files = d.GetFiles();
                     }
 
