@@ -965,6 +965,7 @@ namespace Zapuskator.ViewModels
         
         public void Input_OnKeyPressed(object sender, KeyPressedEventArgs e)
         {
+            
             if (KeyboardRules.ContainsKey(e.Key))
             {
                 var value = KeyboardRules[e.Key];
